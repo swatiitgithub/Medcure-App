@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, StyleSheet, ScrollView, Linking, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { View, StyleSheet, ScrollView, Linking, TouchableOpacity, Image } from 'react-native';
 import {
   Card,
   Title,
@@ -13,73 +13,91 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 import { useTranslation } from 'react-i18next';
+import { useFirstAidData } from '../../constants/FirstAidData';
+import { FlatList } from 'react-native-gesture-handler';
 
 const HomeScreen = ({ navigation }: any) => {
   const { t } = useTranslation();
+  const firstAidData = useFirstAidData();
+
   const isDarkMode = useSelector((state: RootState) => state.theme.isDarkMode);
-  const [searchQuery, setSearchQuery] = React.useState('');
+  const [searchQuery, setSearchQuery] = useState('');
 
   const onChangeSearch = (query: string) => setSearchQuery(query);
+  const NUM_COLUMNS = 2;
+
+  const filterSearchData = firstAidData?.filter((item) =>
+    t(item.title).toLowerCase().includes(searchQuery.toLowerCase())
+  )
 
   return (
     <SafeAreaView style={[styles.container, isDarkMode ? styles.darkBackground : styles.lightBackground]}>
 
 
       <ScrollView style={styles.scrollView}>
-        <View style={styles.searchContainer}>
-          <Searchbar
-            placeholder={t("home.searchPlaceholder")}
-            onChangeText={onChangeSearch}
-            value={searchQuery}
-            style={styles.searchBar}
-            theme={{ colors: { text: isDarkMode ? "white" : "black" } }}
-          />
-        </View>
+        {/* 📋 **FlatList with Header Components** */}
+        <FlatList
+          data={filterSearchData} // ✅ **Use filtered data**
+          keyExtractor={(item) => item.id.toString()}
+          numColumns={NUM_COLUMNS}
+          columnWrapperStyle={styles.row}
+          contentContainerStyle={{ paddingBottom: 16 }} // Avoids cut-off at the bottom
 
-        <View style={styles.emergencyContainer}>
-          <Card style={[styles.emergencyCard, { backgroundColor: isDarkMode ? "#B00020" : "#ff5252" }]}>
-            <Card.Content>
-              <Title style={styles.emergencyTitle}>{t("home.emergencyTitle")}</Title>
-              <Paragraph style={styles.emergencyText}>
-                {t("home.emergencyText")} 112
-              </Paragraph>
-            </Card.Content>
-            <Card.Actions>
-              <Button
-                mode="contained"
-                style={styles.emergencyButton}
-                onPress={() => Linking.openURL("tel:112")}>
-                {t("home.callNow")}
-              </Button>
-            </Card.Actions>
-          </Card>
-        </View>
+          ListHeaderComponent={
+            <>
+              {/* 🔍 **Search Bar** */}
+              <View style={styles.searchContainer}>
+                <Searchbar
+                  placeholder={t("home.searchPlaceholder")}
+                  onChangeText={onChangeSearch}
+                  value={searchQuery}
+                  style={styles.searchBar}
+                  theme={{ colors: { text: isDarkMode ? "white" : "black" } }}
+                />
+              </View>
 
-        <Text style={[styles.sectionTitle, isDarkMode ? styles.darkText : styles.lightText]}>  {t("home.commonEmergencies")}</Text>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalScroll}>
-          {emergencyItems.map((item, index) => (
-            <Card key={index} style={styles.horizontalCard}>
+              {/* 🚑 **Emergency Card** */}
+              <View style={styles.emergencyContainer}>
+                <Card
+                  style={[styles.emergencyCard, { backgroundColor: isDarkMode ? "#B00020" : "#ff5252" }]}
+                >
+                  <Card.Content>
+                    <Title style={styles.emergencyTitle}>{t("home.emergencyTitle")}</Title>
+                    <Paragraph style={styles.emergencyText}>{t("home.emergencyText")} 108</Paragraph>
+                  </Card.Content>
+                  <Card.Actions>
+                    <Button mode="contained" style={styles.emergencyButton} onPress={() => Linking.openURL("tel:108")}>
+                      {t("home.callNow")}
+                    </Button>
+                  </Card.Actions>
+                </Card>
+              </View>
+
+              {/* 📌 Title for Common Emergencies */}
+              <Text style={[styles.sectionTitle, isDarkMode ? styles.darkText : styles.lightText]}>
+                {t("home.commonEmergencies")}
+              </Text>
+            </>
+          }
+
+          renderItem={({ item }) => (
+            <Card style={styles.gridCard}>
               <TouchableOpacity onPress={() => navigation.navigate(item.screen)}>
-                <Card.Cover source={{ uri: item.image }} />
+                <Card.Cover source={item.src}  style={{ resizeMode: 'cover' }} />
               </TouchableOpacity>
               <Card.Content>
-                <Title style={[styles.cardTitle, isDarkMode ? styles.darkText : styles.lightText]}>{t(item.title)}</Title>
+                <Title style={[styles.cardTitle, isDarkMode ? styles.darkText : styles.lightText]}>
+                  {t(item.title)}
+                </Title>
               </Card.Content>
             </Card>
-          ))}
-        </ScrollView>
+          )}
 
-        <Text style={[styles.sectionTitle, isDarkMode ? styles.darkText : styles.lightText]}> {t("home.firstAidGuides")}</Text>
-        <View style={styles.guidesContainer}>
-          {guideItems.map((item, index) => (
-            <Card key={index} style={styles.guideCard} onPress={() => navigation.navigate('FirstAid')}>
-              <Card.Content style={styles.guideCardContent}>
-                <Icon name={item.icon} size={24} color={isDarkMode ? "lightblue" : "#003CB3"} />
-                <Title style={[styles.guideTitle, isDarkMode ? styles.darkText : styles.lightText]}>{t(item.title)}</Title>
-              </Card.Content>
-            </Card>
-          ))}
-        </View>
+          ListEmptyComponent={
+            <Text style={styles.noResultsText}>{t("home.noResults")}</Text> 
+          }
+        />
+
       </ScrollView>
     </SafeAreaView>
   );
@@ -123,8 +141,17 @@ const styles = StyleSheet.create({
     marginTop: 16,
     marginBottom: 8,
   },
-  horizontalScroll: {
-    paddingLeft: 16,
+  verticalScroll: {
+    paddingHorizontal: 16
+  },
+  row: {
+    justifyContent: "space-between",
+    paddingHorizontal: 8,
+  },
+  gridCard: {
+    flex: 1,
+    margin: 8,
+    maxWidth: "46%",
   },
   horizontalCard: {
     width: 160,
@@ -133,6 +160,7 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 14,
+    fontWeight:"bold"
   },
   guidesContainer: {
     flexDirection: 'row',
@@ -171,25 +199,13 @@ const styles = StyleSheet.create({
   lightHeader: {
     backgroundColor: "#fff",
   },
+  noResultsText: {
+    textAlign: "center",
+    marginVertical: 20,
+    fontSize: 16,
+    color: "gray",
+    fontWeight:'bold'
+  },
 });
-
-const emergencyItems = [
-  {
-    title: 'home.cpr_guide',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    screen:'CPRGuide'
-  },
-  {
-    title: 'home.heart_attack',
-    image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    screen: 'HeartAttack',
-  },
-];
-
-const guideItems = [
-  { title: "home.cuts_wounds", icon: "bandage" },
-  { title: "home.burns", icon: "fire" },
-  { title: "home.fractures", icon: "bone" },
-];
 
 export default HomeScreen;

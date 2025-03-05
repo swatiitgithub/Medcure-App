@@ -9,7 +9,7 @@ import { drawerWidth, iconSize, spacing } from "../constants/Dimensions";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState, AppDispatch } from "../redux/store";
 import { changeLanguage } from "../redux/actions/languageActions";
-import { toggleTheme } from "../redux/actions/themeActions"; 
+import { toggleTheme } from "../redux/actions/themeActions";
 import HomeScreen from "../screens/Home/HomeScreen";
 import SettingsScreen from "../screens/Settings/SettingsScreen";
 import { useTranslation } from "react-i18next";
@@ -46,49 +46,49 @@ const CustomDrawerContent = (props: any) => {
         </TouchableOpacity>
       </View>
 
-      <DrawerContentScrollView style={styles.container}>
+      <DrawerContentScrollView style={[styles.container, isDarkMode ? styles.darkText : styles.lightText]}>
         <DrawerItem
           label={t('drawer.home')}
           icon={() => <AntDesign name="home" size={iconSize.lg} color={isDarkMode ? "white" : "green"} />}
-          onPress={() => props.navigation.navigate("Home")}  
+          onPress={() => props.navigation.navigate("Home")}
         />
         <DrawerItem
           label={t('drawer.EmergencyPhoneNumbers')}
           icon={() => <MaterialIcons name="emergency" size={iconSize.lg} color={isDarkMode ? "red" : "red"} />}
-          onPress={() => props.navigation.navigate("EmergencyPhoneNumber")} 
+          onPress={() => props.navigation.navigate("EmergencyPhoneNumber")}
         />
-         <DrawerItem
+        <DrawerItem
           label={t('drawer.AimsofFirstAid')}
           icon={() => <MaterialIcons name="medical-information" size={iconSize.lg} color={isDarkMode ? "white" : "blue"} />}
-          onPress={() => props.navigation.navigate("AimsofFirstAid")}  
+          onPress={() => props.navigation.navigate("AimsofFirstAid")}
         />
         <DrawerItem
           label={t('drawer.PatientCare')}
           icon={() => <Fontisto name="bed-patient" size={iconSize.lg} color={isDarkMode ? "white" : "blue"} />}
-          onPress={() => props.navigation.navigate("PatientCare")}  
+          onPress={() => props.navigation.navigate("PatientCare")}
         />
         <DrawerItem
           label={t('drawer.InformationforwhencallinganAmbulance')}
           icon={() => <Fontisto name="ambulance" size={iconSize.lg} color={isDarkMode ? "red" : "red"} />}
-          onPress={() => props.navigation.navigate("InformationforwhencallinganAmbulance")}  
+          onPress={() => props.navigation.navigate("InformationforwhencallinganAmbulance")}
         />
         <DrawerItem
           label={t('drawer.HowtouseAdrenalineAutoInjector')}
           icon={() => <Fontisto name="injection-syringe" size={iconSize.lg} color={isDarkMode ? "white" : "blue"} />}
-          onPress={() => props.navigation.navigate("HowtouseAdrenalineAutoInjector")}  
+          onPress={() => props.navigation.navigate("HowtouseAdrenalineAutoInjector")}
         />
         <DrawerItem
           label={t('drawer.Bandagestypes')}
           icon={() => <Fontisto name="bandage" size={iconSize.lg} color={isDarkMode ? "white" : "gray"} />}
-          onPress={() => props.navigation.navigate("Bandagestypes")}  
+          onPress={() => props.navigation.navigate("Bandagestypes")}
         />
-         <DrawerItem
+       {/*} <DrawerItem
           label={t('drawer.FirstAidCourses')}
           icon={() => <Fontisto name="discourse" size={iconSize.lg} color={isDarkMode ? "white" : "blue"} />}
-          onPress={() => props.navigation.navigate("FirstAidCourses")}  
-        />
+          onPress={() => props.navigation.navigate("FirstAidCourses")}
+        />*/}
       </DrawerContentScrollView>
-      
+
       <View style={styles.footerContainer}>
         <View style={styles.languageSwitchContainer}>
           <Text style={[styles.languageText, isDarkMode ? styles.darkText : styles.lightText]}>{isHindi ? "हिन्दी" : "English"}</Text>
@@ -100,10 +100,10 @@ const CustomDrawerContent = (props: any) => {
           />
         </View>
         <TouchableOpacity style={[styles.themeButton, styles.languageSwitchContainer]} onPress={toggleThemeMode}>
-        <Text style={[styles.themeText, isDarkMode ? styles.darkText : styles.lightText]}> {t('drawer.changeTheme')}</Text>
-        <Feather name={isDarkMode ? "moon" : "sun"} size={iconSize.lg} color={isDarkMode ? "white" : "black"} />
+          <Text style={[styles.themeText, isDarkMode ? styles.darkText : styles.lightText]}> {t('drawer.changeTheme')}</Text>
+          <Feather name={isDarkMode ? "moon" : "sun"} size={iconSize.lg} color={isDarkMode ? "white" : "#222"} />
         </TouchableOpacity>
-        
+
       </View>
     </View>
   );
@@ -113,31 +113,31 @@ const DrawerNavigator = () => {
   const { t } = useTranslation();
   return (
     <Drawer.Navigator
-    drawerContent={(props) => <CustomDrawerContent {...props} />}
-    screenOptions={{
-      drawerType: "front",
-      drawerStyle: {
-        width: drawerWidth, 
-      },
-      drawerActiveTintColor: "green",
-      drawerActiveBackgroundColor: "red",
-      drawerLabelStyle: {
-        color: "white",
-      },
-    }}
-  >
+      drawerContent={(props) => <CustomDrawerContent {...props} />}
+      screenOptions={{
+        drawerType: "front",
+        drawerStyle: {
+          width: drawerWidth,
+        },
+        drawerActiveTintColor: "green",
+        drawerActiveBackgroundColor: "red",
+        drawerLabelStyle: {
+          color: "white",
+        },
+      }}
+    >
       <Drawer.Screen name="Home" component={StackNavigator} options={{ title: t('drawer.home') }} />
-      <Drawer.Screen name="EmergencyPhoneNumber" component={EmergencyPhoneNumber}  options={{ title: t('drawer.EmergencyPhoneNumbers') }} />
+      <Drawer.Screen name="EmergencyPhoneNumber" component={EmergencyPhoneNumber} options={{ title: t('drawer.EmergencyPhoneNumbers') }} />
       <Drawer.Screen name="AimsofFirstAid" component={AimsofFirstAid} options={{ title: t('drawer.AimsofFirstAid') }} />
-      <Drawer.Screen name="PatientCare" component={PatientCare}  options={{ title: t('drawer.PatientCare') }} />
+      <Drawer.Screen name="PatientCare" component={PatientCare} options={{ title: t('drawer.PatientCare') }} />
       <Drawer.Screen name="InformationforwhencallinganAmbulance" component={AmbulanceInfo} options={{ title: t('drawer.InformationforwhencallinganAmbulance') }} />
       <Drawer.Screen name="HowtouseAdrenalineAutoInjector" component={AdrenalineAutoInjector} options={{ title: t('drawer.HowtouseAdrenalineAutoInjector') }} />
       <Drawer.Screen name="Bandagestypes" component={Bandages} options={{ title: t('drawer.Bandagestypes') }} />
-      <Drawer.Screen name="FirstAidCourses" component={SettingsScreen}  options={{ title: t('drawer.FirstAidCourses') }} />
+      <Drawer.Screen name="FirstAidCourses" component={SettingsScreen} options={{ title: t('drawer.FirstAidCourses') }} />
     </Drawer.Navigator>
   );
 };
-
+//Amputations
 export default DrawerNavigator;
 
 const styles = StyleSheet.create({

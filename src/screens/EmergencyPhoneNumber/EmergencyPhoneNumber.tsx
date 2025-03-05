@@ -28,7 +28,7 @@ const EmergencyPhoneNumber = () => {
     </Title>*/}
 
       <View style={styles.card}>
-        <Title style={styles.title}>{ t('emergency.FromMobile')}: 000</Title>
+        <Title style={[styles.title, isDarkMode ? styles.darkText : styles.lightText]}>{ t('emergency.FromMobile')}: 000</Title>
           <Button mode="contained" style={styles.callButton} onPress={() => Linking.openURL("tel:000")}>
           <Feather name="phone-call" size={20}/>{" "}{t('emergency.EmergencyCall')}
           </Button>
@@ -41,7 +41,7 @@ const EmergencyPhoneNumber = () => {
       </View>
 
       <View style={styles.card}>
-        <Title style={styles.title}>{ t('emergency.FromMobile')}: 108</Title>
+        <Title style={[styles.title, isDarkMode ? styles.darkText : styles.lightText]}>{ t('emergency.FromMobile')}: 108</Title>
           <Button mode="contained" style={styles.callButton} onPress={() => Linking.openURL("tel:108")}>
           <Feather name="phone-call" size={20}/>{" "}{t('emergency.EmergencyCall')}
           </Button>
@@ -54,7 +54,7 @@ const EmergencyPhoneNumber = () => {
       </View>
 
       <View style={styles.card}>
-        <Title style={styles.title}>{ t('emergency.Posionsinfcentre')}: 1800-425-1213</Title>
+        <Title style={[styles.title, isDarkMode ? styles.darkText : styles.lightText]}>{ t('emergency.Posionsinfcentre')}: 1800-425-1213</Title>
           <Button mode="contained" style={styles.callButton} onPress={() => Linking.openURL("tel:1800-425-1213")}>
           <Feather name="phone-call" size={20}/>{" "}{t('emergency.EmergencyCall')}
           </Button>

@@ -10,11 +10,16 @@ import PatientCare from "../screens/PatientCare/PatientCare";
 import AmbulanceInfo from "../screens/AmbulanceInfo/AmbulanceInfo";
 import AdrenalineAutoInjector from "../screens/AdrenalineAutoInjector/AdrenalineAutoInjector";
 import Bandages from "../screens/Bandages/Bandages";
+import Amputations from "../screens/HomeDataAllScreens/Amputations";
+import AllergiesAnaphylaxis from "../screens/HomeDataAllScreens/AllergiesAnaphylaxis";
+import Conscious from "../screens/Conscious/Conscious";
+import Unconscious from "../screens/Unconscious/Unconscious";
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<any>();
 
 const StackNavigator = () => {
   const { t } = useTranslation();
+
 
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
@@ -27,6 +32,10 @@ const StackNavigator = () => {
       <Stack.Screen name="InformationforwhencallinganAmbulance" component={AmbulanceInfo} /> 
       <Stack.Screen name="HowtouseAdrenalineAutoInjector" component={AdrenalineAutoInjector} /> 
       <Stack.Screen name="Bandagestypes" component={Bandages} /> 
+      <Stack.Screen name="Amputations" component={Amputations} /> 
+      <Stack.Screen name="AllergiesAnaphylaxis" component={AllergiesAnaphylaxis} /> 
+      <Stack.Screen name="Conscious" component={Conscious} /> 
+      <Stack.Screen name="Unconscious" component={Unconscious} /> 
     </Stack.Navigator>
   );
 };

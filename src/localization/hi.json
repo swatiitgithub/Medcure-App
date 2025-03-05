@@ -26,7 +26,8 @@
         "burns": "जलन",
         "fractures": "फ्रैक्चर",
         "cpr_guide": "सीपीआर गाइड",
-        "heart_attack": "दिल का दौरा"
+        "heart_attack": "दिल का दौरा",
+        "noResults": "कोई रिकॉर्ड नहीं मिला"
     },
     "guideDetail": {
         "title": "गाइड विवरण",
@@ -110,50 +111,142 @@
         "patient_care_contact": "112 पर कॉल करें या अपने निकटतम प्रशिक्षण प्रदाता के लिए https://nhm.gov.in/ पर जाएं।"
     },
     "ambulance_info": {
-    "ambulance_info_title": "एम्बुलेंस बुलाने के समय की जानकारी",
-    "ambulance_info_desc1": "घटना का स्थान",
-    "ambulance_info_desc2": "सड़क नंबर, सड़क का नाम, निकटतम चौराहा",
-    "ambulance_info_desc3": "कोई अन्य दिशा जो मदद कर सकती है",
-    "ambulance_info_desc4": "क्या हुआ इसका संक्षिप्त विवरण",
-    "ambulance_info_desc5": "जिन लोगों को सहायता की आवश्यकता हो सकती है उनकी संख्या",
-    "ambulance_info_desc6": "चोट के प्रकार",
-    "ambulance_info_desc7": "जो खतरे दिखाई दे रहे हैं",
-    "ambulance_info_desc8": "अपना फोन नंबर दें और सबसे अंत में फोन रखें"
-  },
-  "epipen": {
-    "epipen_title": "एड्रेनालिन ऑटो-इंजेक्टर (एपिपेन) का उपयोग कैसे करें",
-    "epipen_step1": "यदि सांस लेने में कठिनाई हो तो व्यक्ति को सीधा लिटाएं या बैठाएं",
-    "epipen_step2": "एपिपेन का नीला सुरक्षा रिलीज़ निकालें",
-    "epipen_step3": "संतरी सुई को बाहरी मध्य जांघ में डालें",
-    "epipen_step4": "मजबूती से दबाएं ताकि क्लिक हो और 3 सेकंड तक पकड़े रहें",
-    "epipen_step5": "इंजेक्शन का समय नोट करें और छोड़ दें",
-    "epipen_step6": "एम्बुलेंस को बुलाएं",
-    "epipen_step7": "टाइमर शुरू करें। यदि 5 मिनट के बाद कोई सुधार नहीं होता है, तो दूसरी पेन के साथ एक और इंजेक्शन दें।"
-  },
-  "bandages": {
-    "bandages_title": "बैंडेज - प्रकार और उपयोग",
-    "bandages_conforming": "अनुरूप",
-    "bandages_conforming_desc": "ड्रेसिंग को जगह पर रखने के लिए",
-    "bandages_conforming_sizes": "2.5cm 5cm 7.5cm 10cm और 15cm आकार",
-    "bandages_medium_hospital_crepe": "मध्यम अस्पताल क्रेप",
-    "bandages_medium_hospital_crepe_desc": "नरम पट्टी और घाव को ढकने के लिए कोमल समर्थन प्रदान करता है।",
-    "bandages_heavy_crepe": "भारी क्रेप",
-    "bandages_heavy_crepe_desc": "कड़ी पट्टी के लिए प्रयोग करें",
-    "bandages_heavy_crepe_recommendation": "साँप के काटने के लिए अनुशंसित",
-    "bandages_heavy_crepe_size": "अंगों पर आदर्श रूप से 10cm आकार (मुट्ठी के आकार का) उपयोग करें",
-    "bandages_heavy_crepe_instruction": "बिना सिलवटों के सही दबाव पर समान रूप से लागू करें",
-    "bandages_triangular": "त्रिकोणीय",
-    "bandages_triangular_types": "कैलिको (कपड़ा) गैर-बुना (कागज)",
-    "bandages_triangular_adult_size": "वयस्क आकार 155 x 110 x 110",
-    "bandages_triangular_child_size": "बच्चे का आकार 135 x 90 x 90",
-    "bandages_triangular_use": "हाथ स्लिंग / पैडिंग / पट्टी के लिए प्रयोग किया जाता है",
-    "bandages_cohesive": "संगठक",
-    "bandages_cohesive_desc": "स्वयं चिपकने वाला (यानी यह खुद को पकड़ता है)",
-    "bandages_cohesive_use": "खेल की चोट और पशु चिकित्सा उपयोग में प्रयोग करें",
-    "bandages_wound_dressings": "घाव की ड्रेसिंग",
-    "bandages_wound_dressings_no13": "NO13 छोटा संयुक्त ड्रेसिंग 5cm सूती पट्टी पर",
-    "bandages_wound_dressings_no14": "NO14 मध्यम संयुक्त ड्रेसिंग 7.5cm सूती पट्टी पर",
-    "bandages_wound_dressings_no15": "NO15 बड़ा संयुक्त ड्रेसिंग 10cm सूती पट्टी पर",
-    "bandages_wound_dressings_use": "खुले घावों के लिए प्रयोग किया जाता है और आंख की चोट के लिए आदर्श (No13 पसंदीदा आकार के रूप में)।"
-  }
+        "ambulance_info_title": "एम्बुलेंस बुलाने के समय की जानकारी",
+        "ambulance_info_desc1": "घटना का स्थान",
+        "ambulance_info_desc2": "सड़क नंबर, सड़क का नाम, निकटतम चौराहा",
+        "ambulance_info_desc3": "कोई अन्य दिशा जो मदद कर सकती है",
+        "ambulance_info_desc4": "क्या हुआ इसका संक्षिप्त विवरण",
+        "ambulance_info_desc5": "जिन लोगों को सहायता की आवश्यकता हो सकती है उनकी संख्या",
+        "ambulance_info_desc6": "चोट के प्रकार",
+        "ambulance_info_desc7": "जो खतरे दिखाई दे रहे हैं",
+        "ambulance_info_desc8": "अपना फोन नंबर दें और सबसे अंत में फोन रखें"
+    },
+    "epipen": {
+        "epipen_title": "एड्रेनालिन ऑटो-इंजेक्टर (एपिपेन) का उपयोग कैसे करें",
+        "epipen_step1": "यदि सांस लेने में कठिनाई हो तो व्यक्ति को सीधा लिटाएं या बैठाएं",
+        "epipen_step2": "एपिपेन का नीला सुरक्षा रिलीज़ निकालें",
+        "epipen_step3": "संतरी सुई को बाहरी मध्य जांघ में डालें",
+        "epipen_step4": "मजबूती से दबाएं ताकि क्लिक हो और 3 सेकंड तक पकड़े रहें",
+        "epipen_step5": "इंजेक्शन का समय नोट करें और छोड़ दें",
+        "epipen_step6": "एम्बुलेंस को बुलाएं",
+        "epipen_step7": "टाइमर शुरू करें। यदि 5 मिनट के बाद कोई सुधार नहीं होता है, तो दूसरी पेन के साथ एक और इंजेक्शन दें।"
+    },
+    "bandages": {
+        "bandages_title": "बैंडेज - प्रकार और उपयोग",
+        "bandages_conforming": "अनुरूप",
+        "bandages_conforming_desc": "ड्रेसिंग को जगह पर रखने के लिए",
+        "bandages_conforming_sizes": "2.5cm 5cm 7.5cm 10cm और 15cm आकार",
+        "bandages_medium_hospital_crepe": "मध्यम अस्पताल क्रेप",
+        "bandages_medium_hospital_crepe_desc": "नरम पट्टी और घाव को ढकने के लिए कोमल समर्थन प्रदान करता है।",
+        "bandages_heavy_crepe": "भारी क्रेप",
+        "bandages_heavy_crepe_desc": "कड़ी पट्टी के लिए प्रयोग करें",
+        "bandages_heavy_crepe_recommendation": "साँप के काटने के लिए अनुशंसित",
+        "bandages_heavy_crepe_size": "अंगों पर आदर्श रूप से 10cm आकार (मुट्ठी के आकार का) उपयोग करें",
+        "bandages_heavy_crepe_instruction": "बिना सिलवटों के सही दबाव पर समान रूप से लागू करें",
+        "bandages_triangular": "त्रिकोणीय",
+        "bandages_triangular_types": "कैलिको (कपड़ा) गैर-बुना (कागज)",
+        "bandages_triangular_adult_size": "वयस्क आकार 155 x 110 x 110",
+        "bandages_triangular_child_size": "बच्चे का आकार 135 x 90 x 90",
+        "bandages_triangular_use": "हाथ स्लिंग / पैडिंग / पट्टी के लिए प्रयोग किया जाता है",
+        "bandages_cohesive": "संगठक",
+        "bandages_cohesive_desc": "स्वयं चिपकने वाला (यानी यह खुद को पकड़ता है)",
+        "bandages_cohesive_use": "खेल की चोट और पशु चिकित्सा उपयोग में प्रयोग करें",
+        "bandages_wound_dressings": "घाव की ड्रेसिंग",
+        "bandages_wound_dressings_no13": "NO13 छोटा संयुक्त ड्रेसिंग 5cm सूती पट्टी पर",
+        "bandages_wound_dressings_no14": "NO14 मध्यम संयुक्त ड्रेसिंग 7.5cm सूती पट्टी पर",
+        "bandages_wound_dressings_no15": "NO15 बड़ा संयुक्त ड्रेसिंग 10cm सूती पट्टी पर",
+        "bandages_wound_dressings_use": "खुले घावों के लिए प्रयोग किया जाता है और आंख की चोट के लिए आदर्श (No13 पसंदीदा आकार के रूप में)।"
+    },
+    "FirstAidHomeData": {
+        "AMPUTATIONS": "अंग विच्छेदन",
+        "ALLERGIES_ANAPHYLAXIS": "एलर्जी और एनाफिलैक्सिस",
+        "ASTHMA": "दमा",
+        "BLEEDING": "रक्तस्राव",
+        "BITES_STINGS_BEES_WASPS_HORNETS_ANTS": "कीड़े के काटने और डंक - मधुमक्खी, ततैया, भृंग, चींटी",
+        "BITES_STINGS_RED_BACK_OTHER_SPIDERS": "कीड़े के काटने और डंक - रेड बैक और अन्य मकड़ियाँ",
+        "BITES_STINGS_SNAKE_FUNNEL_WEB": "कीड़े के काटने और डंक - साँप का काटना या फ़नल वेब मकड़ी",
+        "BITES_STINGS_TICK": "कीड़े के काटने और डंक - टिक",
+        "BROKEN_BONE_FRACTURE": "अस्थि भंग या फ्रैक्चर",
+        "BURNS_CHEMICAL": "जलन - रासायनिक",
+        "BURNS_FIRE_STOVE_STEAM_SUNBURN": "जलन - आग, स्टोव, भाप और धूप से जलन",
+        "CHOKING": "दम घुटना",
+        "CPR_BASIC_LIFE_SUPPORT": "सीपीआर - मूल जीवन समर्थन",
+        "DIABETIC_EMERGENCY": "मधुमेह आपातकाल",
+        "EXPOSURE_COLD_HYPOTHERMIA": "ठंड के संपर्क में आना - हाइपोथर्मिया",
+        "EXPOSURE_HEAT_HYPERTHERMIA": "गर्मी के संपर्क में आना - हाइपरथर्मिया",
+        "EXPOSURE_HEAT_STROKE": "गर्मी का प्रहार",
+        "FOREIGN_BODY_EYE": "आंख में विदेशी वस्तु",
+        "HEAD_INJURY": "सिर की चोट",
+        "HEART_ATTACK": "दिल का दौरा",
+        "MENINGITIS": "मेनिन्जाइटिस",
+        "MINOR_WOUNDS": "छोटी चोटें",
+        "NOSE_BLEED": "नाक से खून बहना",
+        "POISONS": "जहरीले पदार्थ",
+        "RECOVERY_POSITION": "रिकवरी स्थिति",
+        "SEIZURES": "दौरे",
+        "SHOCK": "सदमा",
+        "STRAINS_SPRAINS_BRUISES": "मांसपेशियों में खिंचाव, मोच, और खरोंच",
+        "STROKE": "स्ट्रोक",
+        "VITAL_SIGNS": "महत्वपूर्ण संकेत"
+    },
+    "Amputations": {
+        "title": "अंग-विच्छेदन",
+        "Management": {
+            "title": "प्रबंधन",
+            "ControlBleeding": "खून को रोकें",
+            "CareSeveredPart": "कटा हुआ भाग बहुत सावधानी से संभालें",
+            "CallAmbulance": "एम्बुलेंस को बुलाएं",
+            "EmergencyCall": "या किसी राहगीर से 000 पर कॉल करने के लिए कहें",
+            "ComfortPatient": "मरीज को सांत्वना दें और आराम दें"
+        },
+        "ManagementOfStump": {
+            "title": "स्टंप का प्रबंधन",
+            "ElevateStump": "स्टंप को ऊपर उठाएं और त्रिभुज पट्टियों या तौलिये के साथ दबाव डालें।",
+            "ReassurePatient": "मरीज को आश्वस्त करें और प्रशिक्षित कर्मियों के आने तक निगरानी करें।"
+        },
+        "ManagementOfBodyPart": {
+            "title": "शारीरिक अंग का प्रबंधन",
+            "PlaceInBag": "कटे हुए हिस्से को ज़िप बैग या सीलबंद कंटेनर में रखें।",
+            "SurroundWithIce": "बर्फ के पानी वाले कंटेनर को तौलिये से ढकें ताकि यह सीधे बर्फ के संपर्क में न आए।",
+            "NoDirectIceContact": "शरीर के भाग को कभी भी सीधे बर्फ के संपर्क में न आने दें, यह फ्रॉस्टबाइट और ऊतक को नुकसान पहुंचा सकता है।",
+            "NoWashUnlessChemical": "जब तक रसायनों से प्रदूषण न हुआ हो, तब तक कटे हुए भाग को कभी न धोएं। फोन द्वारा सलाह लें।"
+        }
+    },
+    "allergies_anaphylaxis": {
+        "title": "एलर्जी एनाफिलैक्सिस",
+        "description": "एलर्जिक प्रतिक्रियाएं, जो आमतौर पर स्थानीयकृत होती हैं, जानलेवा हो सकती हैं। तेजी से और शांत रहकर कार्य करें।",
+        "desc": "कई मामलों में, रोगी पूरी तरह से अपने उपचार की आवश्यकता के बारे में सचेत होगा और उनके लक्षणों से राहत पाने के लिए आवश्यक दवाएं अपने पास रखता होगा। इसे पहचानना और रोगी के अनुरोधों को सुविधाजनक बनाना महत्वपूर्ण है।",
+        "symptomsHeading": "लक्षण और संकेत",
+        "symptoms": {
+            "sym1": "ठंडी, पीली, चिपचिपी त्वचा",
+            "sym2": "तेजी से, कमजोर नाड़ी",
+            "sym3": "सांस लेने में कठिनाई",
+            "sym4": "सूजा हुआ चेहरा और/या जीभ",
+            "sym5": "मतली, उल्टी",
+            "sym6": "छाती में भारीपन की अनुभूति",
+            "sym7": "धब्बेदार त्वचा जिसमें सूजन वाले क्षेत्र हो सकते हैं"
+        },
+        "askBystander": {
+            "bys": "आपातकालीन कॉल",
+            "call": "या किसी राहगीर से 000 पर कॉल करने को कहें"
+        },
+        "button":{
+            "name1":"चेतन",
+            "name2":"अचेतन"
+        },
+        "management": {
+            "conscious": {
+                "cons1": "मरीज को आश्वस्त करें, आरामदायक स्थिति में बैठाएं, और उनके आंदोलन को कम करें",
+                "cons2": "गर्दन के आसपास के कपड़े ढीले करें",
+                "cons3": "यदि लागू हो, तो रोगी को अपने एड्रेनालिन ऑटो-इंजेक्टर (एपिपेन) का उपयोग करने में सहायता करें",
+                "cons4": "किसी भी प्रतिबंधक वस्तुओं जैसे अंगूठी, घड़ी या बेल्ट को हटा दें",
+                "cons5": "तत्काल चिकित्सा सहायता के लिए कॉल करें"
+            },
+            "unconscious": {
+                "uncon1": "बेसिक लाइफ सपोर्ट चार्ट का पालन करें",
+                "uncon2": "मरीज की गर्दन से कोई भी कपड़ा ढीला करें",
+                "uncon3": "तत्काल चिकित्सा सहायता के लिए कॉल करें"
+            }
+        }
+    }
 }

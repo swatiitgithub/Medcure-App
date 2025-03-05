@@ -106,6 +106,12 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    android.applicationVariants.all { variant ->
+    variant.outputs.all { output ->
+        def newName = "First-AidKit_${variant.name}_${variant.versionCode}.apk"
+        output.outputFileName = newName
+    }
+}
 }
 
 dependencies {
