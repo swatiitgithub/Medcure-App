@@ -16,6 +16,8 @@ import Conscious from "../screens/Conscious/Conscious";
 import Unconscious from "../screens/Unconscious/Unconscious";
 import Asthma from "../screens/HomeDataAllScreens/Asthma";
 import Bleeding from "../screens/HomeDataAllScreens/Bleeding";
+import Bees from "../screens/HomeDataAllScreens/Bees";
+import snakebite from "../screens/SnakeBite/snakebite";
 
 const Stack = createStackNavigator<any>();
 
@@ -40,6 +42,9 @@ const StackNavigator = () => {
       <Stack.Screen name="Unconscious" component={Unconscious} /> 
       <Stack.Screen name="Asthma" component={Asthma} /> 
       <Stack.Screen name="Bleeding" component={Bleeding} /> 
+      <Stack.Screen name="Bees" component={Bees} /> 
+      <Stack.Screen name="snakebite" component={snakebite} /> 
+      
     </Stack.Navigator>
   );
 };
