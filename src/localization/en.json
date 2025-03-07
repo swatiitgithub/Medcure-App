@@ -248,5 +248,73 @@
                 "uncon3": "Seek urgent medical assistance CALL"
             }
         }
+    },
+    "asthma": {
+        "title": "ASTHMA",
+        "description": "Episodes can occur for no apparent reason,allergies,even weather, people active in sport or nervous tension .  ",
+        "desc": " In many cases, the patient will be fully aware of the treatment required as well as carry the medication needed to relieve their symptoms. It is important to recognise this and facilitate patient’s requests.",
+        "symptomsHeading": "Signs & Symptoms:",
+        "symptoms": {
+            "sym1": "Coughing",
+            "sym2": "Wheezing",
+            "sym3": "Rapid breath and pulse",
+            "sym4": "In Severe cases: Exhaustion, distressed, fighting for breath"
+           
+        },
+        "askBystander": {
+            "bys": "Emergency Call",
+            "call": "Or ask a bystander to call 000"
+        },
+        "button":{
+            "name1":"Conscious",
+            "name2":"Unconscious"
+        },
+        "management": {
+            "conscious": {
+                "cons1": "Reassure",
+                "cons2": "Help to sit upright, learning forward onto a table, and support with a cushion",
+                "cons3": "Assist with patients asthma medication",
+                "cons4": "Repeat in 4 minutes",
+                "cons5": "if no improvement then call an Ambulance"
+            },
+            "unconscious": {
+                "uncon1": "clear airway",
+                "uncon2": "Follow Basic Life Support chart",
+                "uncon3": "तुरंत एम्बुलेंस बुलाएं"
+            }
+        }
+    },
+    
+        "bleeding": {
+    "title": "BLEEDING",
+    "description": "Episodes can occur for no apparent reason, allergies, even weather, people active in sport or nervous tension.",
+    "typesHeading": "Types of Bleeding",
+    
+    "controlHeading": "Bleeding Control:",
+    "control": {
+        "ctrl1": "When controlling a bleed on a conscious patient, don't be afraid to ask for their help",
+        "ctrl2": "Remember that you only have one pair of hands so they can help to apply pressure and hold dressings while you bandage them. It is also important to allow them to assist if disposable gloves are unavailable, to protect from infection."
+    },
+    "additionalText": "If you don't like the sight of blood then the sooner you dress the better.",
+   
+    "askBystander": {
+        "bys": "Emergency Call",
+        "call": "Or ask a bystander to call 000"
+    },
+   
+    "management": {
+        "point1": "Check for danger and put on disposable gloves (if available)",
+        "point2": "Rest & reassure patient. This can actually slow bleeding",
+        "point3": "Check wound for foriegn objects and remove if not embedded",
+        "point4": "Apply direct pressure to the wound site",
+        "point5": "Elevate the wound to a comfortable position above the heart",
+        "point6": "If bleeding is severe call an Ambulance",
+        "point7": "Apply non-adhesive dressing to wound site, bandage in place",
+        "point8": "Check circulation",
+        "point9": "If the wound continues to bleed then apply another dressing and bandage to the wound site",
+        "point10": "IMPORTANT DO NOT remove the first dressing and bandage.",
+        "point11": "If unsuccessful, apply pressure and call an Ambulance"
     }
+}
+    
 }
