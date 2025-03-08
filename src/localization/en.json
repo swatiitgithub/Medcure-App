@@ -280,12 +280,12 @@
             "unconscious": {
                 "uncon1": "clear airway",
                 "uncon2": "Follow Basic Life Support chart",
-                "uncon3": "तुरंत एम्बुलेंस बुलाएं"
+                "uncon3": "Call an ambulance urgently"
             }
         }
     },
     
-        "bleeding": {
+    "bleeding": {
     "title": "BLEEDING",
     "description": "Episodes can occur for no apparent reason, allergies, even weather, people active in sport or nervous tension.",
     "typesHeading": "Types of Bleeding",
@@ -315,6 +315,58 @@
         "point10": "IMPORTANT DO NOT remove the first dressing and bandage.",
         "point11": "If unsuccessful, apply pressure and call an Ambulance"
     }
-}
-    
+},
+
+    "bees": {
+      "title": "BITES & STINGS",
+      "description": "Bee stings can cause pain, swelling, and allergic reactions. In severe cases, they can lead to anaphylaxis, which is life-threatening.",
+      "typesHeading": "BEES, WASPS, HORNETS, ANTS",
+      "symptomsHeading": "Signs & Symptoms:",
+      "symptoms": {
+        "sym1": "Localised pain, redness, swelling and a possible ache in the groin or under arm.",
+        "sym2": "In cases of severe allergic reaction the patient may also experience swelling of the hands, face and airway."
+       
+      },
+      "askBystander": {
+        "bys": "Emergency Call",
+        "call": "Or ask a bystander to call 000"
+      },
+      "button": {
+        "name1": "Mild Reaction",
+        "name2": "Severe Reaction"
+      },
+      "treatment": {
+        "title": "Treatment",
+        "mild": {
+          "mild1": "Remove bee stings by flicking with fingers",
+          "mild2": "Apply a cold compress to the sting site to reduce pain (don't apply ice or a cold pack directly to the skin, use a cloth pr towel)",
+          "mild3": "In cases of severe allergic reaction apply compression bandages:",
+          "mild4": "If Symptoms persist seek medical advice from the poison information Center on 131126 or your doctor"
+         
+        }
+       
+      },
+      "snakeBite": "Snake Bite" 
+    },
+     "snakeBite": {
+    "title": "BITES & STINGS",
+    "subtitle": "SNAKE BITE OF FUNNEL WEB SPIDER",
+    "management": {
+      "conscious": {
+        "cons": "MANAGEMENT IF CONSCIOUS:",
+        "steps": {
+          "step1": "Reassure the patient , help into a comfortable position, and minimise their movement",
+          "step2": "DO NOT wash the venom off of the bite area as the venom may be identifiable later at the hospital",
+          "step3": "Place a wound dressing over the wound",
+          "step4": "Bandage over the bite and towards the heart with, if available, with 10cm heavy crepe roller bandage",
+          "step5": "On a leg, you may use as many as 3 or 4 bandages with the aim of immobilising the limb without affecting circulation",
+          "step6": "Place a mark on bandage to identify the bite location",
+          "step7": "WARNING : you must not walk the patient, remove bandages or apply a tourniquet"
+        }
+      }
+    },
+    "button": {
+      "name1": "Emergency Steps"
+    }
+  }
 }
