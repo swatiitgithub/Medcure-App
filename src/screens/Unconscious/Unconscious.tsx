@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text, ScrollView, StyleSheet, Image } from 'react-native';
+import { View, Text, ScrollView, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useRoute } from '@react-navigation/native';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
+import { useNavigation } from '@react-navigation/native';
 
 type RouteParams = {
   condition: string;
@@ -14,6 +15,7 @@ const Unconscious = () => {
   const route = useRoute();
   const { condition } = route.params as RouteParams;
   const isDarkMode = useSelector((state: RootState) => state.theme.isDarkMode);
+    const navigation = useNavigation<any>();
 
   // Get the image dynamically based on condition
   const getConditionImage = () => {
@@ -86,6 +88,18 @@ const Unconscious = () => {
             {t('common.noStepsAvailable', 'No management steps available for this condition.')}
           </Text>
         )}
+       {condition === 'funnelspider' && (
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate('FunnelCPR', { condition: 'funnelspider' })}
+          >
+            <Text style={styles.buttonText}>
+              {t('funnelspider.button.next')}
+            </Text>
+          </TouchableOpacity>
+        )}
+
+       
       </View>
     </ScrollView>
   );
@@ -140,6 +154,18 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 16,
     fontStyle: 'italic',
+  },
+  button: {
+    marginTop: 16,
+    backgroundColor: '#e53935',
+    padding: 14,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
 

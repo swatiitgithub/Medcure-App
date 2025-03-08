@@ -51,6 +51,7 @@ const Conscious = () => {
     return steps;
   };
 
+
   const steps = getManagementSteps();
   const conditionImage = getConditionImage();
 
