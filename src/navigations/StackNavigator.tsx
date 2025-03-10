@@ -16,6 +16,14 @@ import Conscious from "../screens/Conscious/Conscious";
 import Unconscious from "../screens/Unconscious/Unconscious";
 import Asthma from "../screens/HomeDataAllScreens/Asthma";
 import Bleeding from "../screens/HomeDataAllScreens/Bleeding";
+import Bees from "../screens/HomeDataAllScreens/Bees";
+import snakebite from "../screens/SnakeBite/snakebite";
+import Redback from "../screens/HomeDataAllScreens/Redback";
+import Funnelspider from "../screens/HomeDataAllScreens/Funnelspider";
+import FunnelCPR from "../screens/FunnelunconsCPR/FunnelCPR";
+import RecoveryPosition from "../screens/RecoveryPosition/RecoverPosition";
+
+
 
 const Stack = createStackNavigator<any>();
 
@@ -39,6 +47,16 @@ const StackNavigator = () => {
       <Stack.Screen name="Unconscious" component={Unconscious} /> 
       <Stack.Screen name="Asthma" component={Asthma} /> 
       <Stack.Screen name="Bleeding" component={Bleeding} /> 
+      <Stack.Screen name="Bees" component={Bees} /> 
+      <Stack.Screen name="snakebite" component={snakebite} /> 
+      <Stack.Screen name="Redback" component={Redback} /> 
+      <Stack.Screen name="Funnelspider" component={Funnelspider} /> 
+      <Stack.Screen name="FunnelCPR" component={FunnelCPR} /> 
+      <Stack.Screen name="RecoveryPosition" component={RecoveryPosition} /> 
+   
+     
+    
+      
     </Stack.Navigator>
   );
 };

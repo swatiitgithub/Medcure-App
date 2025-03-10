@@ -279,7 +279,31 @@
       "unconscious": {
         "uncon1": "clear airway",
         "uncon2": "Follow Basic Life Support chart",
-        "uncon3": "तुरंत एम्बुलेंस बुलाएं"
+        "uncon3": "Call an ambulance urgently"
+      }
+    }
+  },
+    },
+    "askBystander": {
+      "bys": "Emergency Call",
+      "call": "Or ask a bystander to call 000"
+    },
+    "button": {
+      "name1": "Conscious",
+      "name2": "Unconscious"
+    },
+    "management": {
+      "conscious": {
+        "cons1": "Reassure the patient, help into a comfortable position, and minimise their movement",
+        "cons2": "Loosen any clothing from around the neck",
+        "cons3": "If applicable, assist patient to use their Adrenalin Auto-injector (Epipen)",
+        "cons4": "Remove any restrictive items, i.e rings, watches or belts",
+        "cons5": "Seek urgent medical assistance CALL"
+      },
+      "unconscious": {
+        "uncon1": "Follow Basic Life Support chart",
+        "uncon2": "Loosen any clothing from the patient’s neck",
+        "uncon3": "Seek urgent medical assistance CALL"
       }
     }
   },
@@ -433,6 +457,121 @@
     },
     "button": {
       "name1": "Emergency Steps"
+    }
+  },
+
+  "Redback": {
+    "title": "BITES & STINGS",
+    "description": "If a child tells you they have been bitten by a spider, always treat them as though they have been bitten.",
+    "typesHeading": "REDBACK AND OTHER SPIDERS",
+    "symptomsHeading": "Symptoms of a Redback Spider Bite",
+    "symptoms": {
+      "sym1": "Pain at bite site",
+      "sym2": "Sweating around the bite site",
+      "sym3": "Nausea /Vomiting",
+      "sym4": "Joint and abdominal pain",
+      "sym5": "Muscle weakness and spasm",
+      "sym6": "Aches and pain may continuw for days to weeks"
+    },
+    "managementHeading": "Management:",
+    "management": {
+      "manage1": "The patient should be reassured and made comfortable, while remaining at rest.",
+      "manage2": "Apply a cold compress to the bite site which will help relieve pain (don't apply ice or a cold pack directly to the skin, use a cloth or towel).",
+      "manage3": "Immobilise arms or legs with slings or splints",
+      "manage4": "Seek urgent medical advice."
+    }
+  },
+
+  
+    "funnelspider": {
+      "title": "BITES & STINGS",
+      "description": "95% of bites occur on the arms and legs.",
+      "subdescription": "If children say they have been bitten, believe them and treat accordingly.",
+      "subsubdescription": "We recommend using 3 x 10cm heavy crepe bandages for snake bites.",
+      "typesHeading": "SNAKE BITE OR FUNNEL WEB SPIDER",
+      "symptomsHeading": "Signs & Symptoms:",
+      "symptoms": {
+        "sym1": "Puncture marks at the bite site",
+        "sym2": "Signs and symptoms of shock",
+        "sym3": "Blurred vision",
+        "sym4": "Difficulty with breathing",
+        "sym5": "Nausea and vomiting",
+        "sym6": "Drowsiness / fainting",
+        "sym7": "Headache",
+        "sym8": "Abdominal or chest pain"
+      },
+      "button": {
+        "next": "Basic Life Support Chart",
+        "name1": "Conscious Patient",
+        "name2": "Unconscious Patient"
+      },
+      "management": {
+        "conscious": {
+          "cons1": "Reassure the patient, help them into a comfortable position, and minimize their movement.",
+          "cons2": "DO NOT wash the wound as the venom may be identifiable later at the hospital.",
+          "cons3": "Place a wound dressing over the wound.",
+          "cons4": "Bandage over the bite and towards the heart, if available, with a 10cm heavy crepe roller bandage.",
+          "cons5": "On a leg, you may use as many as 3 or 4 bandages with the aim of immobilizing the limb without affecting circulation.",
+          "cons6": "Place a mark on the bandage to identify the bite location.",
+          "cons7": "WARNING: You must not walk the patient, remove bandages, or apply a tourniquet."
+        },
+        "unconscious": {
+          "uncon1": "As shown on the:"
+        }
+      },
+       "cprGuides": {
+            "title": "CPR",
+            "subtitle": "RESUSCITATION",
+            "danger": "Danger",
+            "dangerSteps": {
+                "step1": "Check for danger to:",
+                "step2": "yourself - Bystanders - Victims",
+                "step3": "Hazards - Risks - Safety"
+            },
+            "cprSend": "Send For Help",
+            "cprSendList": {
+                "step1": "Ask a bystander to call for HELP.",
+                "step2": "Call an Ambulance."
+            },
+            "airway": "Airway",
+            "airwaySteps": {
+                "step1": "Check and open the Airway",
+                "step2": "If blocked: roll on side and clear. When clear."
+            },
+            "breathing": "Breathing",
+            "breathingSteps": {
+                "step1": "Look, listen and feel for normal breathing.",
+                "step2": "If Normal, Place in the:",
+                "step3": "If not normal, start chest compressions"
+            },
+            "compressions": "Compressions",
+            "compressionsSteps": {
+                "step1": "Position the heel of one hand in the middle of the patient's chest and grasp the wrist with the other hand (Children up to 2 hands - Infants 2 fingers.",
+                "step2": "Give 30 Chest Compressions to depth of 1/3 and at a rate of 100 to 120 per minute followed by 2 Rescue Breaths.",
+                "step3": "Continue 30 Chest Compressions and 2 rescue breaths until qualified help arrives."
+            },
+            "defibrillation": "defibrillation",
+            "defibrillationText": "If available, attach AED (Defibrillator) as soon as possible and follow its prompts."
+        },
+        "emergency": {
+            "EmergencyCall": "Call Emergency",
+            "RecoveryPosition": "Recovery Position",
+            "bystander": "If you are a bystander, call:"
+        },
+        "Recovery":{
+          "Recoverytitle":"RECOVERY POSITION",
+          "description":"Any Person that is unresponsive and breathing normally should be placed on their side in the lateral Recovery Position."
+        },
+        "steps":{
+          "sym1":"Knee next to the patient and place their near arm at right angles to the body",
+          "sym2":"Lay the patients furthest arm acress their chest and support in place",
+          "sym3":"Lift the patients furthest knee until their foot is flat on the ground beside the knee of their other leg.",
+          "sym4":"Whilst supporting the elbow,gently apply pressure to the outside of the bent knww and carefully roll the patient towords you.",
+          "sym5":"Check that the patient's airway is clear and that they are breathing normally",
+          "sym6":"If patient's breathing becomes abnormal then return them onto their black and commence."
+        },
+        "button1":"Basic Life Support"
+        
     }
   }
 }
