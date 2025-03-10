@@ -33,7 +33,6 @@ const Stack = createStackNavigator<any>();
 const StackNavigator = () => {
   const { t } = useTranslation();
 
-
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
@@ -67,5 +66,4 @@ const StackNavigator = () => {
     </Stack.Navigator>
   );
 };
-
 export default StackNavigator;

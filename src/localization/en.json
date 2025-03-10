@@ -283,7 +283,97 @@
       }
     }
   },
-
+    },
+    "askBystander": {
+      "bys": "Emergency Call",
+      "call": "Or ask a bystander to call 000"
+    },
+    "button": {
+      "name1": "Conscious",
+      "name2": "Unconscious"
+    },
+    "management": {
+      "conscious": {
+        "cons1": "Reassure the patient, help into a comfortable position, and minimise their movement",
+        "cons2": "Loosen any clothing from around the neck",
+        "cons3": "If applicable, assist patient to use their Adrenalin Auto-injector (Epipen)",
+        "cons4": "Remove any restrictive items, i.e rings, watches or belts",
+        "cons5": "Seek urgent medical assistance CALL"
+      },
+      "unconscious": {
+        "uncon1": "Follow Basic Life Support chart",
+        "uncon2": "Loosen any clothing from the patient’s neck",
+        "uncon3": "Seek urgent medical assistance CALL"
+      }
+    }
+  },
+  "VitalSign": {
+    "title": "VITAL SIGNS",
+    "description": "Recording patient's vital signs will assist in the handover to the ambulance, paramedics or emergency nursing staff.",
+    "desc": "Recording vital signs every 10 minutes provides the rescuer with an early record of the patient's mental status, pulse, breathing rate, skin colour, temperature and condition. Giving this information to medical staff could dramatically improve the speed of treatment and patient recovery.",
+    "sendForHelp": "Send For Help",
+    "signs": {
+      "mentalStatus": "Mental status: conscious, drowsy or unconscious",
+      "pulse": "Pulse: taken with your finger not thumb",
+      "breathing": "Breathing: count their breaths for one minute",
+      "pupils": "Pupils: Pupil size for changes to one or both eyes",
+      "skinColor": "Skin colour: patient colours and condition",
+      "temperature": "Temperature: thermometer (ear or under arm is best)",
+      "bloodPressure": "Blood pressure: best for experience operators"
+    },
+    "note": "Don't refer vital signs in patient's earshot to paramedic or nurse as this may cause panic."
+  },
+  "broken_bone_fracture": {
+    "title": "BROKEN BONE OR FRACTURE",
+    "management": "Reassure the patient, help into a comfortable position, and minimise their movement.",
+    "management2": "Call an ambulance if the injured area is clearly deformed, painful, or transport is needed.",
+    "immobilisation": {
+      "general": "Immobilise by strapping above and below the break using bandages and a splint or sling. Check circulation and monitor frequently; watching extremities (fingers and toes) for loss of circulation (loss of skin colour).",
+      "fingerToe": "Immobilise a finger or toe with a splint or taping / strapping to another.",
+      "leg": "A leg can be immobilised by strapping to the other leg."
+    },
+    "fractureTypes": {
+      "title": "Fractures are classified into :",
+      "closed": "Closed (break under the skin)",
+      "open": "Open (aka Compound)",
+      "complicated": "Complicated (most serious)",
+      "greenStick": "Green Stick (young bones)"
+    }
+  },
+  "Stroke": {
+    "title": "STROKE",
+    "signsSymptoms": {
+      "title": "Signs and Symptoms : THINK FAST",
+      "face": "Face : Is there loss of muscle tone on one side of the face?",
+      "arms": "Arms : Can they raise their arms - is there Paralysis or Weakness to one or both sides of the body?",
+      "speech": "Speech : Is there difficulty speaking or seeing?",
+      "time": "Time : Call an Ambulance"
+    },
+    "emergency": {
+      "callAmbulance": "Call an Ambulance",
+      "emergencyCall": "Emergency Call",
+      "bystanderHelp": "Or ask a bystander to call 000"
+    },
+    "otherSymptoms": {
+      "heading": "They amy",
+      "sym1": "They may become confused and lose control of their bladder and bowel",
+      "sym2": "Their pupil sizes may become unequal",
+      "sym3": "They may start vomiting and often become unconscious"
+    },
+    "moreInfotitle": "More Information :",
+    "moreInfo": "Occurs when a patient suffers bleeding into the brain caused by a ruptured blood vessel or a blood clot blocking blood supply. This can result in damaged brain tissues or death. Signs and symptoms may differ according to the area of the brain that is being damaged."
+  },
+  "strains_sprains_bruises": {
+    "title": "Strains, Sprains, Bruises",
+    "management": "Management",
+    "steps": {
+      "rest_patient": "Rest the patient and the injured part",
+      "ice_application": "Ice the injury site for 20 minutes every 2 hours",
+      "compression_bandage": "Apply a compression bandage firmly",
+      "elevate_injured_part": "Elevate the injured part to reduce swelling",
+      "refer_medical_practitioner": "Refer to a medical practitioner"
+    }
+  },
   "bleeding": {
     "title": "BLEEDING",
     "description": "Episodes can occur for no apparent reason, allergies, even weather, people active in sport or nervous tension.",
@@ -315,7 +405,11 @@
       "point11": "If unsuccessful, apply pressure and call an Ambulance"
     }
   },
-
+  "nose_bleed": {
+    "title": "Nosebleed",
+    "treatment": "Treatment",
+    "apply_pressure": "With the patient leaning slightly forward, apply direct pressure to the soft part of the nose for at least 10 minutes"
+  },
   "bees": {
     "title": "BITES & STINGS",
     "description": "Bee stings can cause pain, swelling, and allergic reactions. In severe cases, they can lead to anaphylaxis, which is life-threatening.",
@@ -560,3 +654,5 @@
        
       }
     }
+  }
+}
