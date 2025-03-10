@@ -22,6 +22,9 @@ import Redback from "../screens/HomeDataAllScreens/Redback";
 import Funnelspider from "../screens/HomeDataAllScreens/Funnelspider";
 import FunnelCPR from "../screens/FunnelunconsCPR/FunnelCPR";
 import RecoveryPosition from "../screens/RecoveryPosition/RecoverPosition";
+import Bitetick from "../screens/HomeDataAllScreens/Bitestick";
+import Burns from "../screens/HomeDataAllScreens/Burns";
+import Burnsinformation from "../screens/BurnsInformation/Burnsinformation";
 
 
 
@@ -53,6 +56,9 @@ const StackNavigator = () => {
       <Stack.Screen name="Funnelspider" component={Funnelspider} /> 
       <Stack.Screen name="FunnelCPR" component={FunnelCPR} /> 
       <Stack.Screen name="RecoveryPosition" component={RecoveryPosition} /> 
+      <Stack.Screen name="Bitetick" component={Bitetick} /> 
+      <Stack.Screen name="Burns" component={Burns} /> 
+      <Stack.Screen name="Burnsinformation" component={Burnsinformation} /> 
    
      
     

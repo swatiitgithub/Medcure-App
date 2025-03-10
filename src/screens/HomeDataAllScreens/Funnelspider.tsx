@@ -14,7 +14,7 @@ const Funnelspider = () => {
 
     return (
         <ScrollView style={[styles.container, { backgroundColor: isDarkMode ? "#000" : "#fff" }]}>
-             <Image source={require('../../assets/firstAid/funnelcons.webp')} style={styles.image} />
+             {/* <Image source={require('../../assets/firstAid/funnelcons.webp')} style={styles.image} /> */}
             {/* Title */}
             <Title style={[styles.card, styles.header, { color: isDarkMode ? "#fff" : "#000" }]}>
                 {t('funnelspider.title')}

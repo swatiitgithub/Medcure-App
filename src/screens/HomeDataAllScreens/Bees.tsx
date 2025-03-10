@@ -19,10 +19,10 @@ const BitesAndStings = () => {
         {backgroundColor: isDarkMode ? '#000' : '#fff'},
       ]}>
       {/* Header Image */}
-      <Image
+      {/* <Image
         source={require('../../assets/firstAid/Bees.webp')}
         style={styles.image}
-      />
+      /> */}
 
       {/* Main Title */}
       <Title

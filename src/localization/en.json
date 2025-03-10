@@ -554,7 +554,7 @@
             "defibrillationText": "If available, attach AED (Defibrillator) as soon as possible and follow its prompts."
         },
         "emergency": {
-            "EmergencyCall": "Call Emergency",
+            "EmergencyCall": "Emergency Call ",
             "RecoveryPosition": "Recovery Position",
             "bystander": "If you are a bystander, call:"
         },
@@ -572,6 +572,87 @@
         },
         "button1":"Basic Life Support"
         
+    },
+
+    
+      "bitetick": {
+        "title": "Bite and Tick",
+        "subtitle":"Tick",
+        "description": "May be found anywhere on the body especially the more hairy zones..",
+        "symptomsHeading": "Signs-Symptoms:",
+        "symptoms": {
+          "sym1": "Irritation .Weakness, Lethargy in swallowing and breathing."
+         
+        },
+        "Management": {
+          "title": "Treatment",
+          "point1": "Freeze It Don't Squeeze It!.",
+          "point2": "Squeezing or trying to forcibly remove a tick may cause more tick saliva to be injected.",
+          "point3": "Tick saliva can cause severe allergic reactions. If you suspect this is the case, call an ambulance and seek urgent medical care.",
+          "point4": "So, Spray the tick with an Ether Containing Spray. Spray five times from a distance of approx 1cm, then wait a few minutes.",
+          "point5": "If the tick is still moving or you are insure, Spray another five times and wait a few .",
+          "point6": "Avoid scratching the bite area."
+        }
+       
+      },
+
+      "Burns": {
+        "title": "BURNS CHEMICAL",
+        
+        "Management": {
+          "title": "Treatment",
+          "point1": "Protect the rescuer and the patient from the chemical.",
+          "point2": "Irgently, run cool water over the affected area for a minimum of 20 minutes.",
+          "point3": "Carefully remove any clothing that has been contaminated by the chemical.",
+          "point4": "DO NOT remove any clothing that is attached to skin.",
+          "point5": "Very carefully remove rings or watches, If unsure leave for medical staff to remove.",
+          "point6": "Cover the affected area with a non-adherent sterile dressing or burnaid impregnated dressing or burnaid gel.",
+          "point7" :"DO NOT break blisters or apply any ointment, butter or powders to the affected area" ,
+          "point8" : "Always seek urgent medical assistance for all burns"
+        },
+        "description1": {
+          "title":"Inhalation Burns to Mouth or Throat from Fumes",
+          "point1": "Suspect an inhalation injury if the face shows signs of burns.",
+          "point2": "Patient may develop difficulty in breathing with injury to the airway.",
+          "point3": "Pain and swallowing problems may then occur.",
+          "point4": "Patient may become unconscious."
+        },
+        "Note":{
+          "title":"Note:",
+          "point1":"Consult the MSDS(Material Safety Data Sheet) and / or call The National Poisons Information Centre on 131126"
+        },
+        "button": {
+          "next": "Urdent medical assistance Ambulance Information",
+          "name1": "Conscious",
+          "name2": "Unconscious"
+        },
+        "management": {
+          "conscious": {
+            "cons1": "Give patient reassurance and remove all restrictive clothing and jewellery from around the neck and chest area",
+            "cons2": "Call an Ambulance"
+          
+          },
+          "unconscious": {
+            "uncon1": "clear airway",
+            "uncon2": "Follow Basic Life Support chart",
+            "uncon3": "Call an ambulance urgently"
+          }
+        },
+        "Information":{
+          "title":"Information for When calling an ambulance",
+          "point1": "Location of the incident",
+          "point2":"Street number, street name,nearest intersection",
+           "point3":"Any other direction that may help",
+           "point4":"Brief overall description of what occurred"
+        },
+        "type":{
+          "step1":"Number of the People that may need assistance",
+          "step2": "Types of injuries",
+          "step3":"Hazards that are visible",
+          "step4": "Give your phone number and be last to hang up"
+        }
+       
+      }
     }
   }
 }

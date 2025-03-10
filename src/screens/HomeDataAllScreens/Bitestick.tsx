@@ -1,46 +1,41 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, ScrollView, Image, View, Linking } from 'react-native';
-import { Card, Title, Paragraph, Divider, Button } from 'react-native-paper';
+import { Card, Title, Paragraph, Button } from 'react-native-paper';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import { useNavigation } from '@react-navigation/native';
+import Feather from 'react-native-vector-icons/Feather';
 
-const Asthma = () => {
+const Bitetick = () => {
     const { t } = useTranslation();
     const isDarkMode = useSelector((state: RootState) => state.theme.isDarkMode);
-    const navigation = useNavigation<any>();
 
     return (
         <ScrollView style={[styles.container, { backgroundColor: isDarkMode ? "#000" : "#fff" }]}>
             {/* Header Image */}
-            {/* <Image source={require('../../assets/Asthma/asthma.webp')} style={styles.image} /> */}
+            {/* <Image source={require('../../assets/firstAid/cpr.webp')} style={styles.image} /> */}
 
             {/* Title */}
             <Title style={[styles.card, styles.header, { color: isDarkMode ? "#fff" : "#000" }]}>
-                {t('asthma.title')}
+                {t('bitetick.title')}
             </Title>
 
             <View style={[styles.card, isDarkMode ? styles.darkCard : styles.lightCard]}>
                 <View>
                     <Paragraph style={[styles.listText, isDarkMode ? styles.darkText : styles.lightText]}>
-                        {t('asthma.description')}
+                        {t('bitetick.description')}
                     </Paragraph>
                 </View>
             </View>
 
             <View style={[styles.card, isDarkMode ? styles.darkCard : styles.lightCard]}>
                 <Title style={[styles.title, isDarkMode ? styles.darkText : styles.lightText]}>
-                    {t('asthma.symptomsHeading')}
+                    {t('bitetick.symptomsHeading')}
                 </Title>
 
                 {[
-                    t('asthma.symptoms.sym1'),
-                    t('asthma.symptoms.sym2'),
-                    t('asthma.symptoms.sym3'),
-                    t('asthma.symptoms.sym4'),
-                    
+                    t('bitetick.symptoms.sym1'),
                 ].map((item, index) => (
                     <View key={index} style={styles.listItem}>
                         <FontAwesome5 name="dot-circle" size={20} color="blue" />
@@ -51,30 +46,55 @@ const Asthma = () => {
                 ))}
             </View>
 
-            <Title style={[isDarkMode ? styles.darkText : styles.lightText]}>
-                {t('Amputations.Management.title')}
-            </Title>
+            {/* Management Section with 6 Dot Circles */}
             <View style={[styles.card, isDarkMode ? styles.darkCard : styles.lightCard]}>
-                <Button
-                    mode="contained"
-                    style={styles.callButton}
-                    onPress={() => navigation.navigate('Conscious', { condition: 'asthma' })}
-                >
-                    {t('asthma.button.name1')}
-                </Button>
-                <Button
-                    mode="contained"
-                    style={styles.callButtonname2}
-                    onPress={() => navigation.navigate('Unconscious', { condition: 'asthma' })}
-                >
-                    {t('asthma.button.name2')}
-                </Button>
+                <Title style={[styles.title, isDarkMode ? styles.darkText : styles.lightText]}>
+                    {t('bitetick.Management.title')}
+                </Title>
+                {[
+                    t('bitetick.Management.point1'),
+                    t('bitetick.Management.point2'),
+                    t('bitetick.Management.point3'),
+                    t('bitetick.Management.point4'),
+                    t('bitetick.Management.point5'),
+                    t('bitetick.Management.point6'),
+                ].map((item, index) => (
+                    <View key={index} style={styles.listItem}>
+                        <FontAwesome5 name="dot-circle" size={20} color="blue" />
+                        <Paragraph style={[styles.listText, isDarkMode ? styles.darkText : styles.lightText]}>
+                            {item}
+                        </Paragraph>
+                    </View>
+                ))}
             </View>
+
+            {/* Emergency Call Button */}
+            <Button
+                mode="contained"
+                style={styles.callButton}
+                onPress={() => Linking.openURL('tel:000')}
+                icon={() => <Feather name="phone-call" size={20} color="white" />}
+            >
+                {t('funnelspider.emergency.EmergencyCall')}
+            </Button>
+
+            {/* Emergency Text and Number */}
+            <Paragraph
+                style={[
+                    styles.emergencyText,
+                    isDarkMode ? styles.darkText : styles.warnColor,
+                ]}
+            >
+                {t('funnelspider.emergency.bystander')}
+            </Paragraph>
+            <Paragraph style={[styles.emergencyNumber, styles.warnColor]}>
+                000
+            </Paragraph>
         </ScrollView>
     );
 };
 
-export default Asthma;
+export default Bitetick;
 
 const styles = StyleSheet.create({
     container: {
@@ -127,11 +147,21 @@ const styles = StyleSheet.create({
         color: 'black',
     },
     callButton: {
-        marginTop: 10,
-        backgroundColor: 'green',
+        marginTop: 16,
+        marginBottom: 16,
+        backgroundColor: '#FF0000',
     },
-    callButtonname2: {
-        marginTop: 10,
-        backgroundColor: '#FF2400',
+    emergencyText: {
+        fontSize: 16,
+        textAlign: 'center',
+        marginBottom: 8,
+    },
+    emergencyNumber: {
+        fontSize: 20,
+        textAlign: 'center',
+        fontWeight: 'bold',
+    },
+    warnColor: {
+        color: '#FF0000',
     },
 });
