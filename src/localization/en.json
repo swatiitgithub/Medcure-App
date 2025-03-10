@@ -1,290 +1,356 @@
 {
-    "drawer": {
-        "projectTitle": "Medi-Cure",
-        "home": "Home",
-        "settings": "Settings",
-        "EmergencyPhoneNumbers": "Emergency Phone Numbers",
-        "AimsofFirstAid": "Aims of First Aid",
-        "PatientCare": "Patient Care",
-        "InformationforwhencallinganAmbulance": "Information for when calling an Ambulance",
-        "HowtouseAdrenalineAutoInjector": "How to use Adrenaline Auto-Injector",
-        "Bandagestypes": "Bandages - Types & Use",
-        "FirstAidCourses": "First Aid Courses",
-        "hindi": "हिन्दी",
-        "english": "English",
-        "changeTheme": "Change Theme"
+  "drawer": {
+    "projectTitle": "Medi-Cure",
+    "home": "Home",
+    "settings": "Settings",
+    "EmergencyPhoneNumbers": "Emergency Phone Numbers",
+    "AimsofFirstAid": "Aims of First Aid",
+    "PatientCare": "Patient Care",
+    "InformationforwhencallinganAmbulance": "Information for when calling an Ambulance",
+    "HowtouseAdrenalineAutoInjector": "How to use Adrenaline Auto-Injector",
+    "Bandagestypes": "Bandages - Types & Use",
+    "FirstAidCourses": "First Aid Courses",
+    "hindi": "हिन्दी",
+    "english": "English",
+    "changeTheme": "Change Theme"
+  },
+  "home": {
+    "title": "Home",
+    "searchPlaceholder": "Search first aid guides",
+    "emergencyTitle": "Emergency",
+    "emergencyText": "Call for help immediately in case of emergency",
+    "callNow": "Call Now",
+    "commonEmergencies": "Common Emergencies",
+    "firstAidGuides": "First Aid Guides",
+    "cuts_wounds": "Cuts & Wounds",
+    "burns": "Burns",
+    "fractures": "Fractures",
+    "cpr_guide": "CPR Guide",
+    "heart_attack": "Heart Attack",
+    "noResults": "No Record Found"
+  },
+  "guideDetail": {
+    "title": "Guide Details",
+    "description": "Detailed information about {{guide}}."
+  },
+  "emergency": {
+    "title": "Emergency",
+    "callNow": "Call Emergency Services",
+    "situation": "Confirm the situation",
+    "conscious": "The person is unconscious! Please call emergency services immediately.",
+    "unconscious": "The person is conscious. Keep him calm and give first aid.",
+    "consciousness": "Person regained consciousness",
+    "fainted": "Person fainted",
+    "call108": "🚑 Call 108",
+    "FromMobile": "From Mobile",
+    "EmergencyCall": "Emergency Call",
+    "bystander": "or ask a bystander to call",
+    "Posionsinfcentre": "Poisons Information Centre"
+  },
+  "heart_attack": {
+    "heartAttack": "Heart Attack",
+    "symptoms": "Symptoms",
+    "pain": "Pain below jawline above belly button",
+    "discomfort": "Discomfort",
+    "sweating": "Sweating",
+    "treatment": "Treatment",
+    "lieDown": "Lie down and rest",
+    "nitrate": "Take Sorbitrate/Nitrate under tongue every 5 mins (max 3 times)",
+    "aspirin": "Dissolve Aspirin in water and take",
+    "smallAttack": "Small attack: max up to 6 attacks",
+    "disprin": "Disprin - 325mg (Mouth chewable or dissolve in water)",
+    "clopidogrel": "Clopidogrel - 2 tablets (75mg)",
+    "atorvastatin": "Atorvastatin - 80mg",
+    "cpr": "Give CPR if unconscious",
+    "compression": "100-120 chest compressions/min",
+    "breath": "If breaths are not possible, give only chest compressions",
+    "medication": "Medicine"
+  },
+  "cprGuide": {
+    "cprGuide": "CPR Guide",
+    "cprSteps": "Steps for CPR",
+    "checkResponse": "Check the person’s response",
+    "callHelp": "Call for emergency help",
+    "compressions": "Perform 30 chest compressions",
+    "breath": "Give 2 rescue breaths",
+    "repeat": "Repeat the cycle until help arrives",
+    "breathNotPossible": "If breaths are not possible, give only chest compressions",
+    "compressionRate": "100-120 chest compressions per minute"
+  },
+  "aimsOfFirstAid": {
+    "aimsOfFirstAid": "Aims of First Aid",
+    "firstAidDefinition": "First Aid is the act of providing initial assistance to the injured or ill, prior to handing over to trained personnel.",
+    "aims": "AIMS OF FIRST AID",
+    "preserveLife": "Preserve life",
+    "protectUnconscious": "Protect the unconscious",
+    "promoteRecovery": "Promote recovery",
+    "preventDeterioration": "Prevent deterioration",
+    "seekMedicalAssistance": "Seek medical assistance",
+    "doNoHarm": "DO NO HARM",
+    "protectionAndHygiene": "PROTECTION AND HYGIENE",
+    "washHands": "Wash hands before and after treating a patient, and wear first aid gloves",
+    "useSterileDressings": "Use sterile dressings, swabs and one-use disposable items",
+    "cleanArea": "Clean surrounding area with diluted antiseptics or saline",
+    "rescueBreaths": "If providing Rescue Breaths use a CPR Face Shield / Pocket Mask.",
+    "principlesOfAssessment": "PRINCIPLES OF ASSESSMENT",
+    "history": "History: What's happened? Accident or illness type obtained from scene, patient, or bystanders.",
+    "signs": "Signs: What can you see? Look for bleeding, bruising, or deformities etc.",
+    "symptoms": "Symptoms: What the patient tells you e.g. pain or how they feel.",
+    "callForHelp": "You are not expected to know everything, so call for help as soon as possible.",
+    "basicSteps": "Even big incidents are just a series of basic first aid steps."
+  },
+  "PatientCare": {
+    "patient_care_title": "Patient Care",
+    "patient_care_desc": "Good patient care is one of the most important skills at your disposal. The ability to interact with your patient calmly and confidently will have a positive effect.",
+    "patient_care_talking": "By simply talking to your patient you can lower anxiety and build trust. Rescuers that become technical, distance themselves from patients.",
+    "patient_care_intro": "You should introduce yourself in an informal way, e.g. \"Hi, I'm Mark. I'm a first aider. Can I help?\" This shows the patient that you are able to help, as well as seeking their consent to you providing them with first aid.",
+    "patient_care_eye_contact": "Maintaining eye contact and talking at the same eye level helps to build trust and confidence. If your patient is sitting, then crouch or sit in front of them.",
+    "patient_care_limitations": "If you are not a doctor or nurse, you are only able to offer First Aid from what you know or have been taught. Basic First Aid is often about using your common sense; never take anything for granted. Always seek advice from a healthcare professional and call an Ambulance for all persons that need ongoing treatment.",
+    "patient_care_example": "For example, at the scene of a traffic accident persons travelling in a vehicle may appear to look OK but may be suffering from shock or an injury which is not obvious.",
+    "patient_care_thanks": "We would like to take this opportunity to thank you for choosing to protect yourself and others. We certainly hope that this App will assist you to confidently help someone in need. We recommend that everyone undertake an accredited first aid course.",
+    "patient_care_contact": "Dial 112 or visit https://nhm.gov.in/ for your nearest training provider."
+  },
+  "ambulance_info": {
+    "ambulance_info_title": "Information for when calling an ambulance",
+    "ambulance_info_desc1": "Location of the incident",
+    "ambulance_info_desc2": "Street number, street name, nearest intersection",
+    "ambulance_info_desc3": "Any other direction that may help",
+    "ambulance_info_desc4": "Brief overall description of what occurred",
+    "ambulance_info_desc5": "Number of people that may need assistance",
+    "ambulance_info_desc6": "Types of injuries",
+    "ambulance_info_desc7": "Hazards that are visible",
+    "ambulance_info_desc8": "Give your phone number and be last to hang up"
+  },
+  "epipen": {
+    "epipen_title": "How to Use Adrenaline Auto-Injector (Epipen)",
+    "epipen_step1": "Lay the person flat or sitting if breathing is difficult",
+    "epipen_step2": "Remove the Epipen’s blue safety release",
+    "epipen_step3": "Place the orange needle into the outer mid thigh",
+    "epipen_step4": "Push firmly so it clicks and hold for 3 seconds",
+    "epipen_step5": "Release and record the time of the injection",
+    "epipen_step6": "Call an Ambulance",
+    "epipen_step7": "Start Timer. If no improvement after 5 minutes, give a second injection with another pen."
+  },
+  "bandages": {
+    "bandages_title": "Bandages - Types & Use",
+    "bandages_conforming": "CONFORMING",
+    "bandages_conforming_desc": "Holding Dressings in place",
+    "bandages_conforming_sizes": "2.5cm 5cm 7.5cm 10cm and 15cm sizes",
+    "bandages_medium_hospital_crepe": "MEDIUM HOSPITAL CREPE",
+    "bandages_medium_hospital_crepe_desc": "Soft strapping and wrapping providing gentle support and wound cover.",
+    "bandages_heavy_crepe": "HEAVY CREPE",
+    "bandages_heavy_crepe_desc": "Use for firm strapping firmly",
+    "bandages_heavy_crepe_recommendation": "Recommended for snake bites",
+    "bandages_heavy_crepe_size": "On limbs ideally use the 10cm size (the size of a fist)",
+    "bandages_heavy_crepe_instruction": "Apply evenly at the correct pressure without creasing",
+    "bandages_triangular": "TRIANGULAR",
+    "bandages_triangular_types": "Calico (cloth) Non-woven (paper)",
+    "bandages_triangular_adult_size": "Adult size 155 x 110 x 110",
+    "bandages_triangular_child_size": "Child size 135 x 90 x 90",
+    "bandages_triangular_use": "Used for Arm Slings / Padding / Strapping",
+    "bandages_cohesive": "COHESIVE",
+    "bandages_cohesive_desc": "Self adhesive (i.e. it grips onto itself)",
+    "bandages_cohesive_use": "For use in sports injury and veterinary use",
+    "bandages_wound_dressings": "WOUND DRESSINGS",
+    "bandages_wound_dressings_no13": "NO13 Small Combine Dressing on 5cm cotton bandage",
+    "bandages_wound_dressings_no14": "NO14 Medium Combine Dressing on 7.5cm cotton bandage",
+    "bandages_wound_dressings_no15": "NO15 Large Combine Dressing on 10cm cotton bandage",
+    "bandages_wound_dressings_use": "Used for open wounds and ideal for eye injury (No13 as the preferred size)."
+  },
+  "FirstAidHomeData": {
+    "AMPUTATIONS": "Amputations",
+    "ALLERGIES_ANAPHYLAXIS": "Allergies & Anaphylaxis",
+    "ASTHMA": "Asthma",
+    "BLEEDING": "Bleeding",
+    "BITES_STINGS_BEES_WASPS_HORNETS_ANTS": "Bites & Stings - Bees, Wasps, Hornets, Ants",
+    "BITES_STINGS_RED_BACK_OTHER_SPIDERS": "Bites & Stings - Red Back and Other Spiders",
+    "BITES_STINGS_SNAKE_FUNNEL_WEB": "Bites & Stings - Snake Bite or Funnel Web Spider",
+    "BITES_STINGS_TICK": "Bites & Stings - Tick",
+    "BROKEN_BONE_FRACTURE": "Broken Bone or Fracture",
+    "BURNS_CHEMICAL": "Burns - Chemical",
+    "BURNS_FIRE_STOVE_STEAM_SUNBURN": "Burns - Fire, Stove, Steam, & Sunburn",
+    "CHOKING": "Choking",
+    "CPR_BASIC_LIFE_SUPPORT": "CPR - Basic Life Support",
+    "DIABETIC_EMERGENCY": "Diabetic Emergency",
+    "EXPOSURE_COLD_HYPOTHERMIA": "Exposure to Cold - Hypothermia",
+    "EXPOSURE_HEAT_HYPERTHERMIA": "Exposure to Heat - Hyperthermia",
+    "EXPOSURE_HEAT_STROKE": "Exposure to Heat Stroke",
+    "FOREIGN_BODY_EYE": "Foreign Body in Eye",
+    "HEAD_INJURY": "Head Injury",
+    "HEART_ATTACK": "Heart Attack",
+    "MENINGITIS": "Meningitis",
+    "MINOR_WOUNDS": "Minor Wounds",
+    "NOSE_BLEED": "Nose Bleed",
+    "POISONS": "Poisons",
+    "RECOVERY_POSITION": "Recovery Position",
+    "SEIZURES": "Seizures",
+    "SHOCK": "Shock",
+    "STRAINS_SPRAINS_BRUISES": "Strains, Sprains, Bruises",
+    "STROKE": "Stroke",
+    "VITAL_SIGNS": "Vital Signs"
+  },
+  "Amputations": {
+    "title": "AMPUTATIONS",
+    "Management": {
+      "title": "Management",
+      "ControlBleeding": "Control the bleeding",
+      "CareSeveredPart": "Take very important care of the severed part",
+      "CallAmbulance": "Call an Ambulance",
+      "EmergencyCall": "Or ask a bystander to call 000",
+      "ComfortPatient": "Reassure and comfort the patient"
     },
-    "home": {
-        "title": "Home",
-        "searchPlaceholder": "Search first aid guides",
-        "emergencyTitle": "Emergency",
-        "emergencyText": "Call for help immediately in case of emergency",
-        "callNow": "Call Now",
-        "commonEmergencies": "Common Emergencies",
-        "firstAidGuides": "First Aid Guides",
-        "cuts_wounds": "Cuts & Wounds",
-        "burns": "Burns",
-        "fractures": "Fractures",
-        "cpr_guide": "CPR Guide",
-        "heart_attack": "Heart Attack",
-        "noResults": "No Record Found"
+    "ManagementOfStump": {
+      "title": "Management Of Stump",
+      "ElevateStump": "Elevate the stump and apply pressure with padding such as Triangular Bandages or towels strapped firmly with crepe or compression bandages.",
+      "ReassurePatient": "Give reassurance to the patient and monitor until trained personnel arrive."
     },
-    "guideDetail": {
-        "title": "Guide Details",
-        "description": "Detailed information about {{guide}}."
+    "ManagementOfBodyPart": {
+      "title": "Management Of Body Part",
+      "PlaceInBag": "Place amputated part into a zip-sealed bag or sealed container.",
+      "SurroundWithIce": "Place a towel over a container of icy water to surround the part, without making direct contact with the ice.",
+      "NoDirectIceContact": "NEVER allow the body part to come into direct contact with the ice as this can result in frostbite and damage to the tissue.",
+      "NoWashUnlessChemical": "NEVER wash the severed part unless chemicals have caused contamination. Get advice by phone."
+    }
+  },
+  "allergies_anaphylaxis": {
+    "title": "ALLERGIES ANAPHYLAXIS",
+    "description": "Allergic reactions, although usually localised, can become life-threatening. Act quickly and calmly.",
+    "desc": " In many cases, the patient will be fully aware of the treatment required as well as carry the medication needed to relieve their symptoms. It is important to recognise this and facilitate patient’s requests.",
+    "symptomsHeading": "Signs & Symptoms",
+    "symptoms": {
+      "sym1": "Cold, Pale, Clammy Skin",
+      "sym2": "Rapid, Weak Pulse",
+      "sym3": "Breathing Difficulties",
+      "sym4": "Swollen Face and or Tongue",
+      "sym5": "Nausea, Vomiting",
+      "sym6": "Heavy Sensation in the Chest",
+      "sym7": "Mottled skin with possible swollen areas"
+    },
+    "askBystander": {
+      "bys": "Emergency Call",
+      "call": "Or ask a bystander to call 000"
+    },
+    "button": {
+      "name1": "Conscious",
+      "name2": "Unconscious"
+    },
+    "management": {
+      "conscious": {
+        "cons1": "Reassure the patient, help into a comfortable position, and minimise their movement",
+        "cons2": "Loosen any clothing from around the neck",
+        "cons3": "If applicable, assist patient to use their Adrenalin Auto-injector (Epipen)",
+        "cons4": "Remove any restrictive items, i.e rings, watches or belts",
+        "cons5": "Seek urgent medical assistance CALL"
+      },
+      "unconscious": {
+        "uncon1": "Follow Basic Life Support chart",
+        "uncon2": "Loosen any clothing from the patient’s neck",
+        "uncon3": "Seek urgent medical assistance CALL"
+      }
+    }
+  },
+  "asthma": {
+    "title": "ASTHMA",
+    "description": "Episodes can occur for no apparent reason,allergies,even weather, people active in sport or nervous tension .  ",
+    "desc": " In many cases, the patient will be fully aware of the treatment required as well as carry the medication needed to relieve their symptoms. It is important to recognise this and facilitate patient’s requests.",
+    "symptomsHeading": "Signs & Symptoms:",
+    "symptoms": {
+      "sym1": "Coughing",
+      "sym2": "Wheezing",
+      "sym3": "Rapid breath and pulse",
+      "sym4": "In Severe cases: Exhaustion, distressed, fighting for breath"
+    },
+    "askBystander": {
+      "bys": "Emergency Call",
+      "call": "Or ask a bystander to call 000"
+    },
+    "button": {
+      "name1": "Conscious",
+      "name2": "Unconscious"
+    },
+    "management": {
+      "conscious": {
+        "cons1": "Reassure",
+        "cons2": "Help to sit upright, learning forward onto a table, and support with a cushion",
+        "cons3": "Assist with patients asthma medication",
+        "cons4": "Repeat in 4 minutes",
+        "cons5": "if no improvement then call an Ambulance"
+      },
+      "unconscious": {
+        "uncon1": "clear airway",
+        "uncon2": "Follow Basic Life Support chart",
+        "uncon3": "तुरंत एम्बुलेंस बुलाएं"
+      }
+    }
+  },
+  "VitalSign": {
+    "title": "VITAL SIGNS",
+    "description": "Recording patient's vital signs will assist in the handover to the ambulance, paramedics or emergency nursing staff.",
+    "desc": "Recording vital signs every 10 minutes provides the rescuer with an early record of the patient's mental status, pulse, breathing rate, skin colour, temperature and condition. Giving this information to medical staff could dramatically improve the speed of treatment and patient recovery.",
+    "sendForHelp": "Send For Help",
+    "signs": {
+      "mentalStatus": "Mental status: conscious, drowsy or unconscious",
+      "pulse": "Pulse: taken with your finger not thumb",
+      "breathing": "Breathing: count their breaths for one minute",
+      "pupils": "Pupils: Pupil size for changes to one or both eyes",
+      "skinColor": "Skin colour: patient colours and condition",
+      "temperature": "Temperature: thermometer (ear or under arm is best)",
+      "bloodPressure": "Blood pressure: best for experience operators"
+    },
+    "note": "Don't refer vital signs in patient's earshot to paramedic or nurse as this may cause panic."
+  },
+  "broken_bone_fracture": {
+    "title": "BROKEN BONE OR FRACTURE",
+    "management": "Reassure the patient, help into a comfortable position, and minimise their movement.",
+    "management2": "Call an ambulance if the injured area is clearly deformed, painful, or transport is needed.",
+    "immobilisation": {
+      "general": "Immobilise by strapping above and below the break using bandages and a splint or sling. Check circulation and monitor frequently; watching extremities (fingers and toes) for loss of circulation (loss of skin colour).",
+      "fingerToe": "Immobilise a finger or toe with a splint or taping / strapping to another.",
+      "leg": "A leg can be immobilised by strapping to the other leg."
+    },
+    "fractureTypes": {
+      "title": "Fractures are classified into :",
+      "closed": "Closed (break under the skin)",
+      "open": "Open (aka Compound)",
+      "complicated": "Complicated (most serious)",
+      "greenStick": "Green Stick (young bones)"
+    }
+  },
+  "Stroke": {
+    "title": "STROKE",
+    "signsSymptoms": {
+      "title": "Signs and Symptoms : THINK FAST",
+      "face": "Face : Is there loss of muscle tone on one side of the face?",
+      "arms": "Arms : Can they raise their arms - is there Paralysis or Weakness to one or both sides of the body?",
+      "speech": "Speech : Is there difficulty speaking or seeing?",
+      "time": "Time : Call an Ambulance"
     },
     "emergency": {
-        "title": "Emergency",
-        "callNow": "Call Emergency Services",
-        "situation": "Confirm the situation",
-        "conscious": "The person is unconscious! Please call emergency services immediately.",
-        "unconscious": "The person is conscious. Keep him calm and give first aid.",
-        "consciousness": "Person regained consciousness",
-        "fainted": "Person fainted",
-        "call108": "🚑 Call 108",
-        "FromMobile": "From Mobile",
-        "EmergencyCall": "Emergency Call",
-        "bystander": "or ask a bystander to call",
-        "Posionsinfcentre": "Poisons Information Centre"
+      "callAmbulance": "Call an Ambulance",
+      "emergencyCall": "Emergency Call",
+      "bystanderHelp": "Or ask a bystander to call 000"
     },
-    "heart_attack": {
-        "heartAttack": "Heart Attack",
-        "symptoms": "Symptoms",
-        "pain": "Pain below jawline above belly button",
-        "discomfort": "Discomfort",
-        "sweating": "Sweating",
-        "treatment": "Treatment",
-        "lieDown": "Lie down and rest",
-        "nitrate": "Take Sorbitrate/Nitrate under tongue every 5 mins (max 3 times)",
-        "aspirin": "Dissolve Aspirin in water and take",
-        "smallAttack": "Small attack: max up to 6 attacks",
-        "disprin": "Disprin - 325mg (Mouth chewable or dissolve in water)",
-        "clopidogrel": "Clopidogrel - 2 tablets (75mg)",
-        "atorvastatin": "Atorvastatin - 80mg",
-        "cpr": "Give CPR if unconscious",
-        "compression": "100-120 chest compressions/min",
-        "breath": "If breaths are not possible, give only chest compressions",
-        "medication": "Medicine"
+    "otherSymptoms": {
+      "heading": "They amy",
+      "sym1": "They may become confused and lose control of their bladder and bowel",
+      "sym2": "Their pupil sizes may become unequal",
+      "sym3": "They may start vomiting and often become unconscious"
     },
-    "cprGuide": {
-        "cprGuide": "CPR Guide",
-        "cprSteps": "Steps for CPR",
-        "checkResponse": "Check the person’s response",
-        "callHelp": "Call for emergency help",
-        "compressions": "Perform 30 chest compressions",
-        "breath": "Give 2 rescue breaths",
-        "repeat": "Repeat the cycle until help arrives",
-        "breathNotPossible": "If breaths are not possible, give only chest compressions",
-        "compressionRate": "100-120 chest compressions per minute"
-    },
-    "aimsOfFirstAid": {
-        "aimsOfFirstAid": "Aims of First Aid",
-        "firstAidDefinition": "First Aid is the act of providing initial assistance to the injured or ill, prior to handing over to trained personnel.",
-        "aims": "AIMS OF FIRST AID",
-        "preserveLife": "Preserve life",
-        "protectUnconscious": "Protect the unconscious",
-        "promoteRecovery": "Promote recovery",
-        "preventDeterioration": "Prevent deterioration",
-        "seekMedicalAssistance": "Seek medical assistance",
-        "doNoHarm": "DO NO HARM",
-        "protectionAndHygiene": "PROTECTION AND HYGIENE",
-        "washHands": "Wash hands before and after treating a patient, and wear first aid gloves",
-        "useSterileDressings": "Use sterile dressings, swabs and one-use disposable items",
-        "cleanArea": "Clean surrounding area with diluted antiseptics or saline",
-        "rescueBreaths": "If providing Rescue Breaths use a CPR Face Shield / Pocket Mask.",
-        "principlesOfAssessment": "PRINCIPLES OF ASSESSMENT",
-        "history": "History: What's happened? Accident or illness type obtained from scene, patient, or bystanders.",
-        "signs": "Signs: What can you see? Look for bleeding, bruising, or deformities etc.",
-        "symptoms": "Symptoms: What the patient tells you e.g. pain or how they feel.",
-        "callForHelp": "You are not expected to know everything, so call for help as soon as possible.",
-        "basicSteps": "Even big incidents are just a series of basic first aid steps."
-    },
-    "PatientCare": {
-        "patient_care_title": "Patient Care",
-        "patient_care_desc": "Good patient care is one of the most important skills at your disposal. The ability to interact with your patient calmly and confidently will have a positive effect.",
-        "patient_care_talking": "By simply talking to your patient you can lower anxiety and build trust. Rescuers that become technical, distance themselves from patients.",
-        "patient_care_intro": "You should introduce yourself in an informal way, e.g. \"Hi, I'm Mark. I'm a first aider. Can I help?\" This shows the patient that you are able to help, as well as seeking their consent to you providing them with first aid.",
-        "patient_care_eye_contact": "Maintaining eye contact and talking at the same eye level helps to build trust and confidence. If your patient is sitting, then crouch or sit in front of them.",
-        "patient_care_limitations": "If you are not a doctor or nurse, you are only able to offer First Aid from what you know or have been taught. Basic First Aid is often about using your common sense; never take anything for granted. Always seek advice from a healthcare professional and call an Ambulance for all persons that need ongoing treatment.",
-        "patient_care_example": "For example, at the scene of a traffic accident persons travelling in a vehicle may appear to look OK but may be suffering from shock or an injury which is not obvious.",
-        "patient_care_thanks": "We would like to take this opportunity to thank you for choosing to protect yourself and others. We certainly hope that this App will assist you to confidently help someone in need. We recommend that everyone undertake an accredited first aid course.",
-        "patient_care_contact": "Dial 112 or visit https://nhm.gov.in/ for your nearest training provider."
-    },
-    "ambulance_info": {
-        "ambulance_info_title": "Information for when calling an ambulance",
-        "ambulance_info_desc1": "Location of the incident",
-        "ambulance_info_desc2": "Street number, street name, nearest intersection",
-        "ambulance_info_desc3": "Any other direction that may help",
-        "ambulance_info_desc4": "Brief overall description of what occurred",
-        "ambulance_info_desc5": "Number of people that may need assistance",
-        "ambulance_info_desc6": "Types of injuries",
-        "ambulance_info_desc7": "Hazards that are visible",
-        "ambulance_info_desc8": "Give your phone number and be last to hang up"
-    },
-    "epipen": {
-        "epipen_title": "How to Use Adrenaline Auto-Injector (Epipen)",
-        "epipen_step1": "Lay the person flat or sitting if breathing is difficult",
-        "epipen_step2": "Remove the Epipen’s blue safety release",
-        "epipen_step3": "Place the orange needle into the outer mid thigh",
-        "epipen_step4": "Push firmly so it clicks and hold for 3 seconds",
-        "epipen_step5": "Release and record the time of the injection",
-        "epipen_step6": "Call an Ambulance",
-        "epipen_step7": "Start Timer. If no improvement after 5 minutes, give a second injection with another pen."
-    },
-    "bandages": {
-        "bandages_title": "Bandages - Types & Use",
-        "bandages_conforming": "CONFORMING",
-        "bandages_conforming_desc": "Holding Dressings in place",
-        "bandages_conforming_sizes": "2.5cm 5cm 7.5cm 10cm and 15cm sizes",
-        "bandages_medium_hospital_crepe": "MEDIUM HOSPITAL CREPE",
-        "bandages_medium_hospital_crepe_desc": "Soft strapping and wrapping providing gentle support and wound cover.",
-        "bandages_heavy_crepe": "HEAVY CREPE",
-        "bandages_heavy_crepe_desc": "Use for firm strapping firmly",
-        "bandages_heavy_crepe_recommendation": "Recommended for snake bites",
-        "bandages_heavy_crepe_size": "On limbs ideally use the 10cm size (the size of a fist)",
-        "bandages_heavy_crepe_instruction": "Apply evenly at the correct pressure without creasing",
-        "bandages_triangular": "TRIANGULAR",
-        "bandages_triangular_types": "Calico (cloth) Non-woven (paper)",
-        "bandages_triangular_adult_size": "Adult size 155 x 110 x 110",
-        "bandages_triangular_child_size": "Child size 135 x 90 x 90",
-        "bandages_triangular_use": "Used for Arm Slings / Padding / Strapping",
-        "bandages_cohesive": "COHESIVE",
-        "bandages_cohesive_desc": "Self adhesive (i.e. it grips onto itself)",
-        "bandages_cohesive_use": "For use in sports injury and veterinary use",
-        "bandages_wound_dressings": "WOUND DRESSINGS",
-        "bandages_wound_dressings_no13": "NO13 Small Combine Dressing on 5cm cotton bandage",
-        "bandages_wound_dressings_no14": "NO14 Medium Combine Dressing on 7.5cm cotton bandage",
-        "bandages_wound_dressings_no15": "NO15 Large Combine Dressing on 10cm cotton bandage",
-        "bandages_wound_dressings_use": "Used for open wounds and ideal for eye injury (No13 as the preferred size)."
-    },
-    "FirstAidHomeData": {
-        "AMPUTATIONS": "Amputations",
-        "ALLERGIES_ANAPHYLAXIS": "Allergies & Anaphylaxis",
-        "ASTHMA": "Asthma",
-        "BLEEDING": "Bleeding",
-        "BITES_STINGS_BEES_WASPS_HORNETS_ANTS": "Bites & Stings - Bees, Wasps, Hornets, Ants",
-        "BITES_STINGS_RED_BACK_OTHER_SPIDERS": "Bites & Stings - Red Back and Other Spiders",
-        "BITES_STINGS_SNAKE_FUNNEL_WEB": "Bites & Stings - Snake Bite or Funnel Web Spider",
-        "BITES_STINGS_TICK": "Bites & Stings - Tick",
-        "BROKEN_BONE_FRACTURE": "Broken Bone or Fracture",
-        "BURNS_CHEMICAL": "Burns - Chemical",
-        "BURNS_FIRE_STOVE_STEAM_SUNBURN": "Burns - Fire, Stove, Steam, & Sunburn",
-        "CHOKING": "Choking",
-        "CPR_BASIC_LIFE_SUPPORT": "CPR - Basic Life Support",
-        "DIABETIC_EMERGENCY": "Diabetic Emergency",
-        "EXPOSURE_COLD_HYPOTHERMIA": "Exposure to Cold - Hypothermia",
-        "EXPOSURE_HEAT_HYPERTHERMIA": "Exposure to Heat - Hyperthermia",
-        "EXPOSURE_HEAT_STROKE": "Exposure to Heat Stroke",
-        "FOREIGN_BODY_EYE": "Foreign Body in Eye",
-        "HEAD_INJURY": "Head Injury",
-        "HEART_ATTACK": "Heart Attack",
-        "MENINGITIS": "Meningitis",
-        "MINOR_WOUNDS": "Minor Wounds",
-        "NOSE_BLEED": "Nose Bleed",
-        "POISONS": "Poisons",
-        "RECOVERY_POSITION": "Recovery Position",
-        "SEIZURES": "Seizures",
-        "SHOCK": "Shock",
-        "STRAINS_SPRAINS_BRUISES": "Strains, Sprains, Bruises",
-        "STROKE": "Stroke",
-        "VITAL_SIGNS": "Vital Signs"
-    },
-    "Amputations": {
-        "title": "AMPUTATIONS",
-        "Management": {
-            "title": "Management",
-            "ControlBleeding": "Control the bleeding",
-            "CareSeveredPart": "Take very important care of the severed part",
-            "CallAmbulance": "Call an Ambulance",
-            "EmergencyCall": "Or ask a bystander to call 000",
-            "ComfortPatient": "Reassure and comfort the patient"
-        },
-        "ManagementOfStump": {
-            "title": "Management Of Stump",
-            "ElevateStump": "Elevate the stump and apply pressure with padding such as Triangular Bandages or towels strapped firmly with crepe or compression bandages.",
-            "ReassurePatient": "Give reassurance to the patient and monitor until trained personnel arrive."
-        },
-        "ManagementOfBodyPart": {
-            "title": "Management Of Body Part",
-            "PlaceInBag": "Place amputated part into a zip-sealed bag or sealed container.",
-            "SurroundWithIce": "Place a towel over a container of icy water to surround the part, without making direct contact with the ice.",
-            "NoDirectIceContact": "NEVER allow the body part to come into direct contact with the ice as this can result in frostbite and damage to the tissue.",
-            "NoWashUnlessChemical": "NEVER wash the severed part unless chemicals have caused contamination. Get advice by phone."
-        }
-    },
-    "allergies_anaphylaxis": {
-        "title": "ALLERGIES ANAPHYLAXIS",
-        "description": "Allergic reactions, although usually localised, can become life-threatening. Act quickly and calmly.",
-        "desc": " In many cases, the patient will be fully aware of the treatment required as well as carry the medication needed to relieve their symptoms. It is important to recognise this and facilitate patient’s requests.",
-        "symptomsHeading": "Signs & Symptoms",
-        "symptoms": {
-            "sym1": "Cold, Pale, Clammy Skin",
-            "sym2": "Rapid, Weak Pulse",
-            "sym3": "Breathing Difficulties",
-            "sym4": "Swollen Face and or Tongue",
-            "sym5": "Nausea, Vomiting",
-            "sym6": "Heavy Sensation in the Chest",
-            "sym7": "Mottled skin with possible swollen areas"
-        },
-        "askBystander": {
-            "bys": "Emergency Call",
-            "call": "Or ask a bystander to call 000"
-        },
-        "button":{
-            "name1":"Conscious",
-            "name2":"Unconscious"
-        },
-        "management": {
-            "conscious": {
-                "cons1": "Reassure the patient, help into a comfortable position, and minimise their movement",
-                "cons2": "Loosen any clothing from around the neck",
-                "cons3": "If applicable, assist patient to use their Adrenalin Auto-injector (Epipen)",
-                "cons4": "Remove any restrictive items, i.e rings, watches or belts",
-                "cons5": "Seek urgent medical assistance CALL"
-            },
-            "unconscious": {
-                "uncon1": "Follow Basic Life Support chart",
-                "uncon2": "Loosen any clothing from the patient’s neck",
-                "uncon3": "Seek urgent medical assistance CALL"
-            }
-        }
-    },
-    "asthma": {
-        "title": "ASTHMA",
-        "description": "Episodes can occur for no apparent reason,allergies,even weather, people active in sport or nervous tension .  ",
-        "desc": " In many cases, the patient will be fully aware of the treatment required as well as carry the medication needed to relieve their symptoms. It is important to recognise this and facilitate patient’s requests.",
-        "symptomsHeading": "Signs & Symptoms:",
-        "symptoms": {
-            "sym1": "Coughing",
-            "sym2": "Wheezing",
-            "sym3": "Rapid breath and pulse",
-            "sym4": "In Severe cases: Exhaustion, distressed, fighting for breath"
-           
-        },
-        "askBystander": {
-            "bys": "Emergency Call",
-            "call": "Or ask a bystander to call 000"
-        },
-        "button":{
-            "name1":"Conscious",
-            "name2":"Unconscious"
-        },
-        "management": {
-            "conscious": {
-                "cons1": "Reassure",
-                "cons2": "Help to sit upright, learning forward onto a table, and support with a cushion",
-                "cons3": "Assist with patients asthma medication",
-                "cons4": "Repeat in 4 minutes",
-                "cons5": "if no improvement then call an Ambulance"
-            },
-            "unconscious": {
-                "uncon1": "clear airway",
-                "uncon2": "Follow Basic Life Support chart",
-                "uncon3": "तुरंत एम्बुलेंस बुलाएं"
-            }
-        }
-    },
-        "bleeding": {
+    "moreInfotitle": "More Information :",
+    "moreInfo": "Occurs when a patient suffers bleeding into the brain caused by a ruptured blood vessel or a blood clot blocking blood supply. This can result in damaged brain tissues or death. Signs and symptoms may differ according to the area of the brain that is being damaged."
+  },
+  "strains_sprains_bruises": {
+    "title": "Strains, Sprains, Bruises",
+    "management": "Management",
+    "steps": {
+      "rest_patient": "Rest the patient and the injured part",
+      "ice_application": "Ice the injury site for 20 minutes every 2 hours",
+      "compression_bandage": "Apply a compression bandage firmly",
+      "elevate_injured_part": "Elevate the injured part to reduce swelling",
+      "refer_medical_practitioner": "Refer to a medical practitioner"
+    }
+  },
+  "bleeding": {
     "title": "BLEEDING",
     "description": "Episodes can occur for no apparent reason, allergies, even weather, people active in sport or nervous tension.",
     "typesHeading": "Types of Bleeding",
@@ -314,6 +380,59 @@
       "point10": "IMPORTANT DO NOT remove the first dressing and bandage.",
       "point11": "If unsuccessful, apply pressure and call an Ambulance"
     }
-}
-    
+  },
+  "nose_bleed": {
+    "title": "Nosebleed",
+    "treatment": "Treatment",
+    "apply_pressure": "With the patient leaning slightly forward, apply direct pressure to the soft part of the nose for at least 10 minutes"
+  },
+  "bees": {
+    "title": "BITES & STINGS",
+    "description": "Bee stings can cause pain, swelling, and allergic reactions. In severe cases, they can lead to anaphylaxis, which is life-threatening.",
+    "typesHeading": "BEES, WASPS, HORNETS, ANTS",
+    "symptomsHeading": "Signs & Symptoms:",
+    "symptoms": {
+      "sym1": "Localised pain, redness, swelling and a possible ache in the groin or under arm.",
+      "sym2": "In cases of severe allergic reaction the patient may also experience swelling of the hands, face and airway."
+    },
+    "askBystander": {
+      "bys": "Emergency Call",
+      "call": "Or ask a bystander to call 000"
+    },
+    "button": {
+      "name1": "Mild Reaction",
+      "name2": "Severe Reaction"
+    },
+    "treatment": {
+      "title": "Treatment",
+      "mild": {
+        "mild1": "Remove bee stings by flicking with fingers",
+        "mild2": "Apply a cold compress to the sting site to reduce pain (don't apply ice or a cold pack directly to the skin, use a cloth pr towel)",
+        "mild3": "In cases of severe allergic reaction apply compression bandages:",
+        "mild4": "If Symptoms persist seek medical advice from the poison information Center on 131126 or your doctor"
+      }
+    },
+    "snakeBite": "Snake Bite"
+  },
+  "snakeBite": {
+    "title": "BITES & STINGS",
+    "subtitle": "SNAKE BITE OF FUNNEL WEB SPIDER",
+    "management": {
+      "conscious": {
+        "cons": "MANAGEMENT IF CONSCIOUS:",
+        "steps": {
+          "step1": "Reassure the patient , help into a comfortable position, and minimise their movement",
+          "step2": "DO NOT wash the venom off of the bite area as the venom may be identifiable later at the hospital",
+          "step3": "Place a wound dressing over the wound",
+          "step4": "Bandage over the bite and towards the heart with, if available, with 10cm heavy crepe roller bandage",
+          "step5": "On a leg, you may use as many as 3 or 4 bandages with the aim of immobilising the limb without affecting circulation",
+          "step6": "Place a mark on bandage to identify the bite location",
+          "step7": "WARNING : you must not walk the patient, remove bandages or apply a tourniquet"
+        }
+      }
+    },
+    "button": {
+      "name1": "Emergency Steps"
+    }
+  }
 }
