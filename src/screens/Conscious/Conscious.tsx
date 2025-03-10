@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, ScrollView, StyleSheet, Image, Linking } from 'react-native';
+import { View, Text, ScrollView, StyleSheet, Image, Linking, TouchableOpacity } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useRoute } from '@react-navigation/native';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 import { Button, Paragraph } from 'react-native-paper';
+import { useNavigation } from '@react-navigation/native';
 
 type RouteParams = {
   condition: string;
@@ -15,6 +16,7 @@ const Conscious = () => {
   const route = useRoute();
   const { condition } = route.params as RouteParams;
   const isDarkMode = useSelector((state: RootState) => state.theme.isDarkMode);
+  const navigation = useNavigation<any>();
 
   // Get the image dynamically based on condition
   const getConditionImage = () => {
@@ -102,6 +104,17 @@ const Conscious = () => {
                         >
                             {t('emergency.EmergencyCall')}
                         </Button>
+
+                        {condition === 'Burns' && (
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate('Burnsinformation', { condition: 'Burns' })}
+          >
+            <Text style={styles.buttonText}>
+              {t('Burns.button.next')}
+            </Text>
+          </TouchableOpacity>
+        )}
       </View>
     </ScrollView>
   );
@@ -160,6 +173,18 @@ const styles = StyleSheet.create({
   callButton: {
     marginTop: 10,
     backgroundColor: 'green',
+},
+button: {
+  marginTop: 16,
+  backgroundColor: 'green',
+  padding: 14,
+  borderRadius: 10,
+  alignItems: 'center',
+},
+buttonText: {
+  color: '#fff',
+  fontSize: 16,
+  fontWeight: 'bold',
 },
 });
 

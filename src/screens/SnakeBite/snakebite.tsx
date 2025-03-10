@@ -19,14 +19,14 @@ const Snakebite = () => {
   const { condition } = route.params as RouteParams;
 
   // Dynamic image based on condition
-  const getConditionImage = () => {
-    try {
-      return require(`../../assets/firstAid/ants.webp`); 
-      // return require(`../../assets/firstAid/${condition.toLowerCase()}.webp`);
-    } catch {
-      return null;
-    }
-  };
+  // const getConditionImage = () => {
+  //   try {
+  //     return require(`../../assets/firstAid/ants.webp`); 
+  //     // return require(`../../assets/firstAid/${condition.toLowerCase()}.webp`);
+  //   } catch {
+  //     return null;
+  //   }
+  // };
 
   // Extract management steps from JSON
   const getManagementSteps = () => {
@@ -35,13 +35,13 @@ const Snakebite = () => {
   };
 
   const steps = getManagementSteps();
-  const conditionImage = getConditionImage();
+  // const conditionImage = getConditionImage();
 
   return (
     <ScrollView style={[styles.container, { backgroundColor: isDarkMode ? "#000" : "#fff" }]}>
       
       {/* Condition Image */}
-      {conditionImage && <Image source={conditionImage} style={styles.image} />}
+      {/* {conditionImage && <Image source={conditionImage} style={styles.image} />} */}
       
       <Card style={[styles.card, isDarkMode ? styles.darkCard : styles.lightCard]}>
         {/* Title Section */}
