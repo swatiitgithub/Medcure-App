@@ -8,7 +8,7 @@ export const useFirstAidData = () => {
     { id: 2, title: t("FirstAidHomeData.ALLERGIES_ANAPHYLAXIS"), src: require("../assets/firstAid/allergies_anaphylaxis.webp"), screen: "AllergiesAnaphylaxis"  },
     { id: 3, title: t("FirstAidHomeData.ASTHMA"), src: require("../assets/firstAid/asthma.webp"), screen: "Asthma"  },
     { id: 4, title: t("FirstAidHomeData.BLEEDING"), src: require("../assets/firstAid/bleeding.webp"), screen: "Bleeding" },
-    { id: 5, title: t("FirstAidHomeData.BITES_STINGS_BEES_WASPS_HORNETS_ANTS"), src: require("../assets/firstAid/bee_stings.webp"), screen: "BleedingScreen" },
+    { id: 5, title: t("FirstAidHomeData.BITES_STINGS_BEES_WASPS_HORNETS_ANTS"), src: require("../assets/firstAid/bee_stings.webp"), screen: "Bees" },
     { id: 6, title: t("FirstAidHomeData.BITES_STINGS_RED_BACK_OTHER_SPIDERS"), src: require("../assets/firstAid/spider_bites.webp") },
     { id: 7, title: t("FirstAidHomeData.BITES_STINGS_SNAKE_FUNNEL_WEB"), src: require("../assets/firstAid/snake_bite.webp") },
     { id: 8, title: t("FirstAidHomeData.BITES_STINGS_TICK"), src: require("../assets/firstAid/tick_bite.webp") },

@@ -50,9 +50,8 @@ const Bleeding = () => {
 
                 {/* Additional Text Below Bleeding Control */}
                 <Paragraph style={[styles.additionalText, { color: isDarkMode ? "#fff" : "#000" }]}>
-        If you don't like the sight of blood then the sooner you{' '}
-        <Text style={{ fontWeight: 'bold' }}>dress the better</Text>.
-    </Paragraph>
+                    {t('bleeding.additionalText')}
+                </Paragraph>
                 
             </View>
 
