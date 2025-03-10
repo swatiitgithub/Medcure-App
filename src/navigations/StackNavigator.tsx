@@ -16,12 +16,16 @@ import Conscious from "../screens/Conscious/Conscious";
 import Unconscious from "../screens/Unconscious/Unconscious";
 import Asthma from "../screens/HomeDataAllScreens/Asthma";
 import Bleeding from "../screens/HomeDataAllScreens/Bleeding";
+import VitalSign from "../screens/HomeDataAllScreens/VitalSign";
+import BrokenBoneFacture from "../screens/HomeDataAllScreens/BrokenBoneFacture";
+import Stroke from "../screens/HomeDataAllScreens/Stroke";
+import StrainsSprainsAndBruises from "../screens/HomeDataAllScreens/StrainsSprainsAndBruises";
+import NoseBleed from "../screens/HomeDataAllScreens/NoseBleed";
 
 const Stack = createStackNavigator<any>();
 
 const StackNavigator = () => {
   const { t } = useTranslation();
-
 
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
@@ -40,8 +44,12 @@ const StackNavigator = () => {
       <Stack.Screen name="Unconscious" component={Unconscious} /> 
       <Stack.Screen name="Asthma" component={Asthma} /> 
       <Stack.Screen name="Bleeding" component={Bleeding} /> 
+      <Stack.Screen name="VitalSign" component={VitalSign} /> 
+      <Stack.Screen name="BrokenBoneFacture" component={BrokenBoneFacture} /> 
+      <Stack.Screen name="Stroke" component={Stroke} /> 
+      <Stack.Screen name="StrainsSprainsAndBruises" component={StrainsSprainsAndBruises} /> 
+      <Stack.Screen name="NoseBleed" component={NoseBleed} /> 
     </Stack.Navigator>
   );
 };
-
 export default StackNavigator;

@@ -37,11 +37,11 @@ const HomeScreen = ({ navigation }: any) => {
       <ScrollView style={styles.scrollView}>
         {/* 📋 **FlatList with Header Components** */}
         <FlatList
-          data={filterSearchData} // ✅ **Use filtered data**
+          data={filterSearchData}
           keyExtractor={(item) => item.id.toString()}
           numColumns={NUM_COLUMNS}
           columnWrapperStyle={styles.row}
-          contentContainerStyle={{ paddingBottom: 16 }} // Avoids cut-off at the bottom
+          contentContainerStyle={{ paddingBottom: 16 }}
 
           ListHeaderComponent={
             <>

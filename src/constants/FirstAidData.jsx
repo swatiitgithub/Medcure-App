@@ -12,7 +12,7 @@ export const useFirstAidData = () => {
     { id: 6, title: t("FirstAidHomeData.BITES_STINGS_RED_BACK_OTHER_SPIDERS"), src: require("../assets/firstAid/spider_bites.webp") },
     { id: 7, title: t("FirstAidHomeData.BITES_STINGS_SNAKE_FUNNEL_WEB"), src: require("../assets/firstAid/snake_bite.webp") },
     { id: 8, title: t("FirstAidHomeData.BITES_STINGS_TICK"), src: require("../assets/firstAid/tick_bite.webp") },
-    { id: 9, title: t("FirstAidHomeData.BROKEN_BONE_FRACTURE"), src: require("../assets/firstAid/fracture.webp") },
+    { id: 9, title: t("FirstAidHomeData.BROKEN_BONE_FRACTURE"), src: require("../assets/firstAid/fracture.webp"), screen :"BrokenBoneFacture" },
     { id: 10, title: t("FirstAidHomeData.BURNS_CHEMICAL"), src: require("../assets/firstAid/chemical_burn.webp") },
     { id: 11, title: t("FirstAidHomeData.BURNS_FIRE_STOVE_STEAM_SUNBURN"), src: require("../assets/firstAid/fire_burn.webp") },
     { id: 12, title: t("FirstAidHomeData.CHOKING"), src: require("../assets/firstAid/choking.webp") },
@@ -26,13 +26,13 @@ export const useFirstAidData = () => {
     { id: 20, title: t("FirstAidHomeData.HEART_ATTACK"), src: require("../assets/firstAid/heart_attack.webp") },
     { id: 21, title: t("FirstAidHomeData.MENINGITIS"), src: require("../assets/firstAid/meningitis.webp") },
     { id: 22, title: t("FirstAidHomeData.MINOR_WOUNDS"), src: require("../assets/firstAid/minor_wounds.webp") },
-    { id: 23, title: t("FirstAidHomeData.NOSE_BLEED"), src: require("../assets/firstAid/nose_bleed.webp") },
+    { id: 23, title: t("FirstAidHomeData.NOSE_BLEED"), src: require("../assets/firstAid/nose_bleed.webp"), screen:"NoseBleed" },
     { id: 24, title: t("FirstAidHomeData.POISONS"), src: require("../assets/firstAid/poisons.webp") },
     { id: 25, title: t("FirstAidHomeData.RECOVERY_POSITION"), src: require("../assets/firstAid/recovery_position.webp") },
     { id: 26, title: t("FirstAidHomeData.SEIZURES"), src: require("../assets/firstAid/seizures.webp") },
     { id: 27, title: t("FirstAidHomeData.SHOCK"), src: require("../assets/firstAid/shock.webp") },
-    { id: 28, title: t("FirstAidHomeData.STRAINS_SPRAINS_BRUISES"), src: require("../assets/firstAid/sprains_strains.webp") },
-    { id: 29, title: t("FirstAidHomeData.STROKE"), src: require("../assets/firstAid/stroke.webp") },
-    { id: 30, title: t("FirstAidHomeData.VITAL_SIGNS"), src: require("../assets/firstAid/vital_signs.webp") }
+    { id: 28, title: t("FirstAidHomeData.STRAINS_SPRAINS_BRUISES"), src: require("../assets/firstAid/sprains_strains.webp"), screen:"StrainsSprainsAndBruises" },
+    { id: 29, title: t("FirstAidHomeData.STROKE"), src: require("../assets/firstAid/stroke.webp"), screen:"Stroke" },
+    { id: 30, title: t("FirstAidHomeData.VITAL_SIGNS"), src: require("../assets/firstAid/vital_signs.webp"), screen:"VitalSign" }
   ];
 };
