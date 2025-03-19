@@ -95,9 +95,9 @@ This project is licensed under the MIT License.
 
 ## Contact
 For any inquiries, feel free to contact:
-- **Developer:** Akshay Kumar Gupta
-- **Email:** 1997akshay04@gmail.com
-- **GitHub:** [GitHub Profile](https://github.com/akshay0497)
+- **Developer:** Swati Mishra
+- **Email:** swatimishra3092002@gmail.com
+- **GitHub:** [GitHub Profile](https://github.com/swatiitgithub)
 
 ---
 
