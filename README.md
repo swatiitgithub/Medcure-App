@@ -38,7 +38,7 @@ To set up the project, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/akshay0497-medcure.git
+   git clone https://github.com/swatiitgithub/Medcure-App.git
    cd medcure
    ```
 
