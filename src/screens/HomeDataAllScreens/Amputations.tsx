@@ -14,9 +14,9 @@ const Amputations = () => {
 
   return (
     <ScrollView style={[styles.container, { backgroundColor: isDarkMode ? "#000" : "#fff" }]}>
-      {/* Header Image */}
+      {/* Header Image 
       <Image source={require('../../assets/Amputations/amputations.webp')} style={styles.image} />
-
+*/}
       {/* Title 
       <Title style={[styles.header, {color: isDarkMode ? "#fff" : "#000"  }]}>
         {t('aimsOfFirstAid.aimsOfFirstAid')}

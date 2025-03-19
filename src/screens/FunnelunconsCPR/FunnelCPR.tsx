@@ -27,10 +27,10 @@ const FunnelCPR = () => {
         isDarkMode ? styles.darkBackground : styles.lightBackground,
       ]}>
       {/* CPR Image */}
-      <Image
+      {/* <Image
         source={require('../../assets/CPRGuide/cprguide.webp')}
         style={styles.image}
-      />
+      /> */}
 
       {/* CPR Title and Subtitle */}
       <View style={styles.centered}>

@@ -18,10 +18,10 @@ const HeartAttack = () => {
       style={[styles.container, isDarkMode ? styles.darkBackground : styles.lightBackground]}
     >
       {/* Image */}
-      <Image
+      {/* <Image
         source={require('../../assets/HeartAttack/heart_attack.webp')}
         style={styles.image}
-      />
+      /> */}
 
       {/* Header */}
       <Title style={[styles.header, isDarkMode ? styles.darkText : styles.lightText]}>

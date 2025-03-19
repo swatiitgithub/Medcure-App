@@ -1,27 +1,35 @@
 import React from 'react';
-import { View, Text, ScrollView, StyleSheet, Image, Linking, TouchableOpacity } from 'react-native';
-import { useTranslation } from 'react-i18next';
-import { useRoute } from '@react-navigation/native';
-import { useSelector } from 'react-redux';
-import { RootState } from '../../redux/store';
-import { Button, Paragraph } from 'react-native-paper';
-import { useNavigation } from '@react-navigation/native';
+import {
+  View,
+  Text,
+  ScrollView,
+  StyleSheet,
+  Image,
+  Linking,
+  TouchableOpacity,
+} from 'react-native';
+import {useTranslation} from 'react-i18next';
+import {useRoute} from '@react-navigation/native';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../redux/store';
+import {Button, Paragraph} from 'react-native-paper';
+import {useNavigation} from '@react-navigation/native';
 
 type RouteParams = {
   condition: string;
 };
 
 const Conscious = () => {
-  const { t } = useTranslation();
+  const {t} = useTranslation();
   const route = useRoute();
-  const { condition } = route.params as RouteParams;
+  const {condition} = route.params as RouteParams;
   const isDarkMode = useSelector((state: RootState) => state.theme.isDarkMode);
   const navigation = useNavigation<any>();
 
   // Get the image dynamically based on condition
   const getConditionImage = () => {
     try {
-      return require(`../../assets/firstAid/consciousness.webp`);
+      // return require(`../../assets/firstAid/consciousness.webp`);
       //return require(`../../assets/firstAid/${condition.toLowerCase()}.webp`);
     } catch {
       return null;
@@ -32,12 +40,12 @@ const Conscious = () => {
   const getManagementSteps = () => {
     const steps = [];
     let index = 1;
-    
+
     // Try different possible translation paths
     const possiblePaths = [
       `${condition}.management.conscious.cons`,
       `${condition}.conscious.steps.step`,
-      `${condition}.management.steps.conscious.`
+      `${condition}.management.steps.conscious.`,
     ];
 
     for (const basePath of possiblePaths) {
@@ -53,66 +61,69 @@ const Conscious = () => {
     return steps;
   };
 
-
   const steps = getManagementSteps();
   const conditionImage = getConditionImage();
 
   return (
-    <ScrollView style={[styles.container, { backgroundColor: isDarkMode ? '#000' : '#fff' }]}>
-      {conditionImage && (
-        <Image source={conditionImage} style={styles.image} />
-      )}
+    <ScrollView
+      style={[
+        styles.container,
+        {backgroundColor: isDarkMode ? '#000' : '#fff'},
+      ]}>
+      {conditionImage && <Image source={conditionImage} style={styles.image} />}
       <View style={styles.content}>
-        <Text style={[styles.title, { color: isDarkMode ? '#fff' : '#333' }]}>
+        <Text style={[styles.title, {color: isDarkMode ? '#fff' : '#333'}]}>
           {t(`${condition}.title`)}
         </Text>
-        <Text style={[styles.subtitle, { color: isDarkMode ? '#ccc' : '#666' }]}>
+        <Text style={[styles.subtitle, {color: isDarkMode ? '#ccc' : '#666'}]}>
           {t('common.consciousManagement', 'Management for Conscious Patient')}
         </Text>
-        
+
         {steps.length > 0 ? (
           steps.map((step, index) => (
-            <View 
-              key={index} 
+            <View
+              key={index}
               style={[
-                styles.stepContainer, 
-                { backgroundColor: isDarkMode ? '#222' : '#f8f8f8' }
-              ]}
-            >
+                styles.stepContainer,
+                {backgroundColor: isDarkMode ? '#222' : '#f8f8f8'},
+              ]}>
               <Text style={styles.stepNumber}>{index + 1}</Text>
-              <Text style={[styles.stepText, { color: isDarkMode ? '#fff' : '#333' }]}>
+              <Text
+                style={[
+                  styles.stepText,
+                  {color: isDarkMode ? '#fff' : '#333'},
+                ]}>
                 {step}
               </Text>
             </View>
           ))
         ) : (
-          <Text style={[styles.noSteps, { color: isDarkMode ? '#fff' : '#666' }]}>
-            {t('common.noStepsAvailable', 'No management steps available for this condition.')}
+          <Text style={[styles.noSteps, {color: isDarkMode ? '#fff' : '#666'}]}>
+            {t(
+              'common.noStepsAvailable',
+              'No management steps available for this condition.',
+            )}
           </Text>
         )}
       </View>
 
       <View>
-        <Text>
-          Adrenalin Auto-Injector (Epipen)
-        </Text>
+        <Text>Adrenalin Auto-Injector (Epipen)</Text>
 
-         <Button
-                            mode="contained" 
-                            style={styles.callButton} 
-                            onPress={() => Linking.openURL("tel:000")}
-                        >
-                            {t('emergency.EmergencyCall')}
-                        </Button>
+        <Button
+          mode="contained"
+          style={styles.callButton}
+          onPress={() => Linking.openURL('tel:000')}>
+          {t('emergency.EmergencyCall')}
+        </Button>
 
-                        {condition === 'Burns' && (
+        {condition === 'Burns' && (
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate('Burnsinformation', { condition: 'Burns' })}
-          >
-            <Text style={styles.buttonText}>
-              {t('Burns.button.next')}
-            </Text>
+            onPress={() =>
+              navigation.navigate('Burnsinformation', {condition: 'Burns'})
+            }>
+            <Text style={styles.buttonText}>{t('Burns.button.next')}</Text>
           </TouchableOpacity>
         )}
       </View>
@@ -173,27 +184,25 @@ const styles = StyleSheet.create({
   callButton: {
     marginTop: 10,
     backgroundColor: 'green',
-},
-button: {
-  marginTop: 16,
-  backgroundColor: 'green',
-  padding: 14,
-  borderRadius: 10,
-  alignItems: 'center',
-},
-buttonText: {
-  color: '#fff',
-  fontSize: 16,
-  fontWeight: 'bold',
-},
+  },
+  button: {
+    marginTop: 16,
+    backgroundColor: 'green',
+    padding: 14,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 });
 
 export default Conscious;
 
-
-
-
-{/* import React from 'react';
+{
+  /* import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, ScrollView, Image, View, Linking } from 'react-native';
 import { Card, Title, Paragraph, Divider, Button } from 'react-native-paper';
@@ -328,4 +337,5 @@ const styles = StyleSheet.create({
     marginTop: 10,
     backgroundColor: '#FF2400',
   }
-});*/}
+});*/
+}

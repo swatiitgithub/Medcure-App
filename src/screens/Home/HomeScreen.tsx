@@ -45,7 +45,7 @@ const HomeScreen = ({ navigation }: any) => {
 
           ListHeaderComponent={
             <>
-              {/* 🔍 **Search Bar** */}
+            
               <View style={styles.searchContainer}>
                 <Searchbar
                   placeholder={t("home.searchPlaceholder")}
@@ -63,7 +63,7 @@ const HomeScreen = ({ navigation }: any) => {
                 >
                   <Card.Content>
                     <Title style={styles.emergencyTitle}>{t("home.emergencyTitle")}</Title>
-                    <Paragraph style={styles.emergencyText}>{t("home.emergencyText")} 108</Paragraph>
+                    <Paragraph style={styles.emergencyText}>{t("home.emergencyText")} 102</Paragraph>
                   </Card.Content>
                   <Card.Actions>
                     <Button mode="contained" style={styles.emergencyButton} onPress={() => Linking.openURL("tel:108")}>

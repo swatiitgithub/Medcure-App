@@ -25,6 +25,37 @@ import RecoveryPosition from "../screens/RecoveryPosition/RecoverPosition";
 import Bitetick from "../screens/HomeDataAllScreens/Bitestick";
 import Burns from "../screens/HomeDataAllScreens/Burns";
 import Burnsinformation from "../screens/BurnsInformation/Burnsinformation";
+import Burnfirestove from "../screens/HomeDataAllScreens/Burnsfirestove";
+import Choking from "../screens/HomeDataAllScreens/Choking";
+import EffectiveCoughing from "../screens/EffectiveChocking/EffectiveCoughing";
+import IneffectiveChoking from "../screens/IneffectiveChocking/IneffectiveChoking";
+import DiabeticEmergency from "../screens/HomeDataAllScreens/DiabeticEmergency";
+import DiabeticCons from "../screens/DiabeticConcious/DiabeticCons";
+import Diabeticuncons from "../screens/DiabeticConcious/Diabeticuncons";
+import ExposureCold from "../screens/HomeDataAllScreens/ExposureCold";
+import ExposuretoHeat from "../screens/HomeDataAllScreens/ExposuretoHeat";
+import HeatStroke from "../screens/HeatStroke/HeatStroke";
+import Heatconscious from "../screens/HeatConcious/Heatconscious";
+import HeatUnconscious from "../screens/HeatConcious/HeatUnconscious";
+import HyperthermiaConscious from "../screens/ExposureHeatHypercons/HyperthermiaConscious";
+import HyperthermiaUnconscious from "../screens/ExposureHeatHypercons/HyperthermiaUnconscious";
+import BrokenBone from "../screens/HomeDataAllScreens/BrokenBone";
+import ForeignBodyEye from "../screens/HomeDataAllScreens/ForeignBodyinEye";
+import Stroke from "../screens/HomeDataAllScreens/Stroke";
+import VitalSign from "../screens/HomeDataAllScreens/VitalSign";
+import NoseBleed from "../screens/HomeDataAllScreens/NoseBleed";
+import StrainsSprainsAndBruises from "../screens/HomeDataAllScreens/StrainsSprainsAndBruises";
+import HeadInjury from "../screens/HomeDataAllScreens/HeadInjury";
+import Attack from "../screens/HomeDataAllScreens/Attack";
+import Attackconcious from "../screens/Attackconsuncons/Attackconcious";
+import Meningitis from "../screens/HomeDataAllScreens/Meningitis";
+import Minorwound from "../screens/HomeDataAllScreens/Minorwound";
+import Seizures from "../screens/HomeDataAllScreens/Seizures";
+import Shock from "../screens/HomeDataAllScreens/Shock";
+import Poisons from "../screens/HomeDataAllScreens/Poisons";
+import PoisonsCons from "../screens/Poisonsconsuncons/Poisonscons";
+import PoisonsUncons from "../screens/Poisonsconsuncons/PoisonsUncons";
+
 
 
 
@@ -59,6 +90,37 @@ const StackNavigator = () => {
       <Stack.Screen name="Bitetick" component={Bitetick} /> 
       <Stack.Screen name="Burns" component={Burns} /> 
       <Stack.Screen name="Burnsinformation" component={Burnsinformation} /> 
+      <Stack.Screen name="Burnfirestove" component={Burnfirestove} /> 
+      <Stack.Screen name="Choking" component={Choking} /> 
+      <Stack.Screen name="EffectiveCoughing" component={EffectiveCoughing} /> 
+      <Stack.Screen name="IneffectiveChoking" component={IneffectiveChoking} /> 
+      <Stack.Screen name="DiabeticEmergency" component={DiabeticEmergency} /> 
+      <Stack.Screen name="DiabeticCons" component={DiabeticCons} /> 
+      <Stack.Screen name="Diabeticuncons" component={Diabeticuncons} /> 
+      <Stack.Screen name="ExposureCold" component={ExposureCold} /> 
+      <Stack.Screen name="ExposuretoHeat" component={ExposuretoHeat} />
+      <Stack.Screen name="HeatStroke" component={HeatStroke} />
+      <Stack.Screen name="Heatconscious" component={Heatconscious} />
+      <Stack.Screen name="HeatUnconscious" component={HeatUnconscious} />
+      <Stack.Screen name="HyperthermiaConscious" component={HyperthermiaConscious} />
+      <Stack.Screen name="HyperthermiaUnconscious" component={HyperthermiaUnconscious} />
+      <Stack.Screen name="BrokenBone" component={BrokenBone} />
+      <Stack.Screen name="ForeignBodyEye" component={ForeignBodyEye} />
+      <Stack.Screen name="Stroke" component={Stroke} />
+      <Stack.Screen name="VitalSign" component={VitalSign} />
+      <Stack.Screen name="NoseBleed" component={NoseBleed} />
+      <Stack.Screen name="StrainsSprainsAndBruises" component={StrainsSprainsAndBruises} />
+      <Stack.Screen name="HeadInjury" component={HeadInjury} />
+      <Stack.Screen name="Attack" component={Attack} />
+      <Stack.Screen name="Attackconcious" component={Attackconcious} />
+      <Stack.Screen name="Meningitis" component={Meningitis} />
+      <Stack.Screen name="Minorwound" component={Minorwound} />
+      <Stack.Screen name="Seizures" component={Seizures} />
+      <Stack.Screen name="Shock" component={Shock} />
+      <Stack.Screen name="Poisons" component={Poisons} />
+      <Stack.Screen name="PoisonsCons" component={PoisonsCons} />
+      <Stack.Screen name="PoisonsUncons" component={PoisonsUncons} />
+    
    
      
     

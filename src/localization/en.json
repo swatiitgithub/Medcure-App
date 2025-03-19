@@ -41,7 +41,7 @@
     "unconscious": "The person is conscious. Keep him calm and give first aid.",
     "consciousness": "Person regained consciousness",
     "fainted": "Person fainted",
-    "call108": "🚑 Call 108",
+    "call108": "🚑 Call 102",
     "FromMobile": "From Mobile",
     "EmergencyCall": "Emergency Call",
     "bystander": "or ask a bystander to call",
@@ -160,8 +160,8 @@
   "FirstAidHomeData": {
     "AMPUTATIONS": "Amputations",
     "ALLERGIES_ANAPHYLAXIS": "Allergies & Anaphylaxis",
-    "ASTHMA": "Asthma",
-    "BLEEDING": "Bleeding",
+    "ASTHMA": "Asthma Treatment",
+    "BLEEDING": "Bleeding Treatment",
     "BITES_STINGS_BEES_WASPS_HORNETS_ANTS": "Bites & Stings - Bees, Wasps, Hornets, Ants",
     "BITES_STINGS_RED_BACK_OTHER_SPIDERS": "Bites & Stings - Red Back and Other Spiders",
     "BITES_STINGS_SNAKE_FUNNEL_WEB": "Bites & Stings - Snake Bite or Funnel Web Spider",
@@ -169,7 +169,7 @@
     "BROKEN_BONE_FRACTURE": "Broken Bone or Fracture",
     "BURNS_CHEMICAL": "Burns - Chemical",
     "BURNS_FIRE_STOVE_STEAM_SUNBURN": "Burns - Fire, Stove, Steam, & Sunburn",
-    "CHOKING": "Choking",
+    "CHOKING": "What to do in case of Feeling of Suffocation",
     "CPR_BASIC_LIFE_SUPPORT": "CPR - Basic Life Support",
     "DIABETIC_EMERGENCY": "Diabetic Emergency",
     "EXPOSURE_COLD_HYPOTHERMIA": "Exposure to Cold - Hypothermia",
@@ -283,30 +283,30 @@
       }
     }
   },
+
+  "askBystander": {
+    "bys": "Emergency Call",
+    "call": "Or ask a bystander to call 000"
+  },
+  "button": {
+    "name1": "Conscious",
+    "name2": "Unconscious"
+  },
+  "management": {
+    "conscious": {
+      "cons1": "Reassure the patient, help into a comfortable position, and minimise their movement",
+      "cons2": "Loosen any clothing from around the neck",
+      "cons3": "If applicable, assist patient to use their Adrenalin Auto-injector (Epipen)",
+      "cons4": "Remove any restrictive items, i.e rings, watches or belts",
+      "cons5": "Seek urgent medical assistance CALL"
     },
-    "askBystander": {
-      "bys": "Emergency Call",
-      "call": "Or ask a bystander to call 000"
-    },
-    "button": {
-      "name1": "Conscious",
-      "name2": "Unconscious"
-    },
-    "management": {
-      "conscious": {
-        "cons1": "Reassure the patient, help into a comfortable position, and minimise their movement",
-        "cons2": "Loosen any clothing from around the neck",
-        "cons3": "If applicable, assist patient to use their Adrenalin Auto-injector (Epipen)",
-        "cons4": "Remove any restrictive items, i.e rings, watches or belts",
-        "cons5": "Seek urgent medical assistance CALL"
-      },
-      "unconscious": {
-        "uncon1": "Follow Basic Life Support chart",
-        "uncon2": "Loosen any clothing from the patient’s neck",
-        "uncon3": "Seek urgent medical assistance CALL"
-      }
+    "unconscious": {
+      "uncon1": "Follow Basic Life Support chart",
+      "uncon2": "Loosen any clothing from the patient’s neck",
+      "uncon3": "Seek urgent medical assistance CALL"
     }
   },
+
   "VitalSign": {
     "title": "VITAL SIGNS",
     "description": "Recording patient's vital signs will assist in the handover to the ambulance, paramedics or emergency nursing staff.",
@@ -482,176 +482,559 @@
     }
   },
 
-  
-    "funnelspider": {
-      "title": "BITES & STINGS",
-      "description": "95% of bites occur on the arms and legs.",
-      "subdescription": "If children say they have been bitten, believe them and treat accordingly.",
-      "subsubdescription": "We recommend using 3 x 10cm heavy crepe bandages for snake bites.",
-      "typesHeading": "SNAKE BITE OR FUNNEL WEB SPIDER",
-      "symptomsHeading": "Signs & Symptoms:",
-      "symptoms": {
-        "sym1": "Puncture marks at the bite site",
-        "sym2": "Signs and symptoms of shock",
-        "sym3": "Blurred vision",
-        "sym4": "Difficulty with breathing",
-        "sym5": "Nausea and vomiting",
-        "sym6": "Drowsiness / fainting",
-        "sym7": "Headache",
-        "sym8": "Abdominal or chest pain"
-      },
-      "button": {
-        "next": "Basic Life Support Chart",
-        "name1": "Conscious Patient",
-        "name2": "Unconscious Patient"
-      },
-      "management": {
-        "conscious": {
-          "cons1": "Reassure the patient, help them into a comfortable position, and minimize their movement.",
-          "cons2": "DO NOT wash the wound as the venom may be identifiable later at the hospital.",
-          "cons3": "Place a wound dressing over the wound.",
-          "cons4": "Bandage over the bite and towards the heart, if available, with a 10cm heavy crepe roller bandage.",
-          "cons5": "On a leg, you may use as many as 3 or 4 bandages with the aim of immobilizing the limb without affecting circulation.",
-          "cons6": "Place a mark on the bandage to identify the bite location.",
-          "cons7": "WARNING: You must not walk the patient, remove bandages, or apply a tourniquet."
-        },
-        "unconscious": {
-          "uncon1": "As shown on the:"
-        }
-      },
-       "cprGuides": {
-            "title": "CPR",
-            "subtitle": "RESUSCITATION",
-            "danger": "Danger",
-            "dangerSteps": {
-                "step1": "Check for danger to:",
-                "step2": "yourself - Bystanders - Victims",
-                "step3": "Hazards - Risks - Safety"
-            },
-            "cprSend": "Send For Help",
-            "cprSendList": {
-                "step1": "Ask a bystander to call for HELP.",
-                "step2": "Call an Ambulance."
-            },
-            "airway": "Airway",
-            "airwaySteps": {
-                "step1": "Check and open the Airway",
-                "step2": "If blocked: roll on side and clear. When clear."
-            },
-            "breathing": "Breathing",
-            "breathingSteps": {
-                "step1": "Look, listen and feel for normal breathing.",
-                "step2": "If Normal, Place in the:",
-                "step3": "If not normal, start chest compressions"
-            },
-            "compressions": "Compressions",
-            "compressionsSteps": {
-                "step1": "Position the heel of one hand in the middle of the patient's chest and grasp the wrist with the other hand (Children up to 2 hands - Infants 2 fingers.",
-                "step2": "Give 30 Chest Compressions to depth of 1/3 and at a rate of 100 to 120 per minute followed by 2 Rescue Breaths.",
-                "step3": "Continue 30 Chest Compressions and 2 rescue breaths until qualified help arrives."
-            },
-            "defibrillation": "defibrillation",
-            "defibrillationText": "If available, attach AED (Defibrillator) as soon as possible and follow its prompts."
-        },
-        "emergency": {
-            "EmergencyCall": "Emergency Call ",
-            "RecoveryPosition": "Recovery Position",
-            "bystander": "If you are a bystander, call:"
-        },
-        "Recovery":{
-          "Recoverytitle":"RECOVERY POSITION",
-          "description":"Any Person that is unresponsive and breathing normally should be placed on their side in the lateral Recovery Position."
-        },
-        "steps":{
-          "sym1":"Knee next to the patient and place their near arm at right angles to the body",
-          "sym2":"Lay the patients furthest arm acress their chest and support in place",
-          "sym3":"Lift the patients furthest knee until their foot is flat on the ground beside the knee of their other leg.",
-          "sym4":"Whilst supporting the elbow,gently apply pressure to the outside of the bent knww and carefully roll the patient towords you.",
-          "sym5":"Check that the patient's airway is clear and that they are breathing normally",
-          "sym6":"If patient's breathing becomes abnormal then return them onto their black and commence."
-        },
-        "button1":"Basic Life Support"
-        
+  "funnelspider": {
+    "title": "BITES & STINGS",
+    "description": "95% of bites occur on the arms and legs.",
+    "subdescription": "If children say they have been bitten, believe them and treat accordingly.",
+    "subsubdescription": "We recommend using 3 x 10cm heavy crepe bandages for snake bites.",
+    "typesHeading": "SNAKE BITE OR FUNNEL WEB SPIDER",
+    "symptomsHeading": "Signs & Symptoms:",
+    "symptoms": {
+      "sym1": "Puncture marks at the bite site",
+      "sym2": "Signs and symptoms of shock",
+      "sym3": "Blurred vision",
+      "sym4": "Difficulty with breathing",
+      "sym5": "Nausea and vomiting",
+      "sym6": "Drowsiness / fainting",
+      "sym7": "Headache",
+      "sym8": "Abdominal or chest pain"
     },
-
-    
-      "bitetick": {
-        "title": "Bite and Tick",
-        "subtitle":"Tick",
-        "description": "May be found anywhere on the body especially the more hairy zones..",
-        "symptomsHeading": "Signs-Symptoms:",
-        "symptoms": {
-          "sym1": "Irritation .Weakness, Lethargy in swallowing and breathing."
-         
-        },
-        "Management": {
-          "title": "Treatment",
-          "point1": "Freeze It Don't Squeeze It!.",
-          "point2": "Squeezing or trying to forcibly remove a tick may cause more tick saliva to be injected.",
-          "point3": "Tick saliva can cause severe allergic reactions. If you suspect this is the case, call an ambulance and seek urgent medical care.",
-          "point4": "So, Spray the tick with an Ether Containing Spray. Spray five times from a distance of approx 1cm, then wait a few minutes.",
-          "point5": "If the tick is still moving or you are insure, Spray another five times and wait a few .",
-          "point6": "Avoid scratching the bite area."
-        }
-       
+    "button": {
+      "next": "Basic Life Support Chart",
+      "name1": "Conscious Patient",
+      "name2": "Unconscious Patient"
+    },
+    "management": {
+      "conscious": {
+        "cons1": "Reassure the patient, help them into a comfortable position, and minimize their movement.",
+        "cons2": "DO NOT wash the wound as the venom may be identifiable later at the hospital.",
+        "cons3": "Place a wound dressing over the wound.",
+        "cons4": "Bandage over the bite and towards the heart, if available, with a 10cm heavy crepe roller bandage.",
+        "cons5": "On a leg, you may use as many as 3 or 4 bandages with the aim of immobilizing the limb without affecting circulation.",
+        "cons6": "Place a mark on the bandage to identify the bite location.",
+        "cons7": "WARNING: You must not walk the patient, remove bandages, or apply a tourniquet."
       },
+      "unconscious": {
+        "uncon1": "As shown on the:"
+      }
+    },
+    "cprGuides": {
+      "title": "CPR",
+      "subtitle": "RESUSCITATION",
+      "danger": "Danger",
+      "dangerSteps": {
+        "step1": "Check for danger to:",
+        "step2": "yourself - Bystanders - Victims",
+        "step3": "Hazards - Risks - Safety"
+      },
+      "cprSend": "Send For Help",
+      "cprSendList": {
+        "step1": "Ask a bystander to call for HELP.",
+        "step2": "Call an Ambulance."
+      },
+      "airway": "Airway",
+      "airwaySteps": {
+        "step1": "Check and open the Airway",
+        "step2": "If blocked: roll on side and clear. When clear."
+      },
+      "breathing": "Breathing",
+      "breathingSteps": {
+        "step1": "Look, listen and feel for normal breathing.",
+        "step2": "If Normal, Place in the:",
+        "step3": "If not normal, start chest compressions"
+      },
+      "compressions": "Compressions",
+      "compressionsSteps": {
+        "step1": "Position the heel of one hand in the middle of the patient's chest and grasp the wrist with the other hand (Children up to 2 hands - Infants 2 fingers.",
+        "step2": "Give 30 Chest Compressions to depth of 1/3 and at a rate of 100 to 120 per minute followed by 2 Rescue Breaths.",
+        "step3": "Continue 30 Chest Compressions and 2 rescue breaths until qualified help arrives."
+      },
+      "defibrillation": "defibrillation",
+      "defibrillationText": "If available, attach AED (Defibrillator) as soon as possible and follow its prompts."
+    },
+    "emergency": {
+      "EmergencyCall": "Emergency Call ",
+      "RecoveryPosition": "Recovery Position",
+      "bystander": "If you are a bystander, call:"
+    },
+    "Recovery": {
+      "Recoverytitle": "RECOVERY POSITION",
+      "description": "Any Person that is unresponsive and breathing normally should be placed on their side in the lateral Recovery Position."
+    },
+    "steps": {
+      "sym1": "Knee next to the patient and place their near arm at right angles to the body",
+      "sym2": "Lay the patients furthest arm acress their chest and support in place",
+      "sym3": "Lift the patients furthest knee until their foot is flat on the ground beside the knee of their other leg.",
+      "sym4": "Whilst supporting the elbow,gently apply pressure to the outside of the bent knww and carefully roll the patient towords you.",
+      "sym5": "Check that the patient's airway is clear and that they are breathing normally",
+      "sym6": "If patient's breathing becomes abnormal then return them onto their black and commence."
+    },
+    "button1": "Basic Life Support"
+  },
 
-      "Burns": {
-        "title": "BURNS CHEMICAL",
-        
-        "Management": {
-          "title": "Treatment",
-          "point1": "Protect the rescuer and the patient from the chemical.",
-          "point2": "Irgently, run cool water over the affected area for a minimum of 20 minutes.",
-          "point3": "Carefully remove any clothing that has been contaminated by the chemical.",
-          "point4": "DO NOT remove any clothing that is attached to skin.",
-          "point5": "Very carefully remove rings or watches, If unsure leave for medical staff to remove.",
-          "point6": "Cover the affected area with a non-adherent sterile dressing or burnaid impregnated dressing or burnaid gel.",
-          "point7" :"DO NOT break blisters or apply any ointment, butter or powders to the affected area" ,
-          "point8" : "Always seek urgent medical assistance for all burns"
-        },
-        "description1": {
-          "title":"Inhalation Burns to Mouth or Throat from Fumes",
-          "point1": "Suspect an inhalation injury if the face shows signs of burns.",
-          "point2": "Patient may develop difficulty in breathing with injury to the airway.",
-          "point3": "Pain and swallowing problems may then occur.",
-          "point4": "Patient may become unconscious."
-        },
-        "Note":{
-          "title":"Note:",
-          "point1":"Consult the MSDS(Material Safety Data Sheet) and / or call The National Poisons Information Centre on 131126"
-        },
-        "button": {
-          "next": "Urdent medical assistance Ambulance Information",
-          "name1": "Conscious",
-          "name2": "Unconscious"
-        },
-        "management": {
-          "conscious": {
-            "cons1": "Give patient reassurance and remove all restrictive clothing and jewellery from around the neck and chest area",
-            "cons2": "Call an Ambulance"
-          
-          },
-          "unconscious": {
-            "uncon1": "clear airway",
-            "uncon2": "Follow Basic Life Support chart",
-            "uncon3": "Call an ambulance urgently"
-          }
-        },
-        "Information":{
-          "title":"Information for When calling an ambulance",
-          "point1": "Location of the incident",
-          "point2":"Street number, street name,nearest intersection",
-           "point3":"Any other direction that may help",
-           "point4":"Brief overall description of what occurred"
-        },
-        "type":{
-          "step1":"Number of the People that may need assistance",
-          "step2": "Types of injuries",
-          "step3":"Hazards that are visible",
-          "step4": "Give your phone number and be last to hang up"
-        }
-       
+  "bitetick": {
+    "title": "Bite and Tick",
+    "subtitle": "Tick",
+    "description": "May be found anywhere on the body especially the more hairy zones..",
+    "symptomsHeading": "Signs-Symptoms:",
+    "symptoms": {
+      "sym1": "Irritation .Weakness, Lethargy in swallowing and breathing."
+    },
+    "Management": {
+      "title": "Treatment",
+      "point1": "Freeze It Don't Squeeze It!.",
+      "point2": "Squeezing or trying to forcibly remove a tick may cause more tick saliva to be injected.",
+      "point3": "Tick saliva can cause severe allergic reactions. If you suspect this is the case, call an ambulance and seek urgent medical care.",
+      "point4": "So, Spray the tick with an Ether Containing Spray. Spray five times from a distance of approx 1cm, then wait a few minutes.",
+      "point5": "If the tick is still moving or you are insure, Spray another five times and wait a few .",
+      "point6": "Avoid scratching the bite area."
+    },
+    "tickemergency": {
+      "bys": "Emergency Call",
+      "call": "Or ask a bystander to call 000"
+    }
+  },
+
+  "Burns": {
+    "title": "BURNS CHEMICAL",
+
+    "Management": {
+      "title": "Treatment",
+      "point1": "Protect the rescuer and the patient from the chemical.",
+      "point2": "Irgently, run cool water over the affected area for a minimum of 20 minutes.",
+      "point3": "Carefully remove any clothing that has been contaminated by the chemical.",
+      "point4": "DO NOT remove any clothing that is attached to skin.",
+      "point5": "Very carefully remove rings or watches, If unsure leave for medical staff to remove.",
+      "point6": "Cover the affected area with a non-adherent sterile dressing or burnaid impregnated dressing or burnaid gel.",
+      "point7": "DO NOT break blisters or apply any ointment, butter or powders to the affected area",
+      "point8": "Always seek urgent medical assistance for all burns"
+    },
+    "description1": {
+      "title": "Inhalation Burns to Mouth or Throat from Fumes",
+      "point1": "Suspect an inhalation injury if the face shows signs of burns.",
+      "point2": "Patient may develop difficulty in breathing with injury to the airway.",
+      "point3": "Pain and swallowing problems may then occur.",
+      "point4": "Patient may become unconscious."
+    },
+    "Note": {
+      "title": "Note:",
+      "point1": "Consult the MSDS(Material Safety Data Sheet) and / or call The National Poisons Information Centre on 131126"
+    },
+    "button": {
+      "next": "Urdent medical assistance Ambulance Information",
+      "name1": "Conscious",
+      "name2": "Unconscious"
+    },
+    "management": {
+      "conscious": {
+        "cons1": "Give patient reassurance and remove all restrictive clothing and jewellery from around the neck and chest area",
+        "cons2": "Call an Ambulance"
+      },
+      "unconscious": {
+        "uncon1": "clear airway",
+        "uncon2": "Follow Basic Life Support chart",
+        "uncon3": "Call an ambulance urgently"
+      }
+    },
+    "Information": {
+      "title": "Information for When calling an ambulance",
+      "point1": "Location of the incident",
+      "point2": "Street number, street name,nearest intersection",
+      "point3": "Any other direction that may help",
+      "point4": "Brief overall description of what occurred"
+    },
+    "type": {
+      "step1": "Number of the People that may need assistance",
+      "step2": "Types of injuries",
+      "step3": "Hazards that are visible",
+      "step4": "Give your phone number and be last to hang up"
+    }
+  },
+  "BurnsStove": {
+    "title": "BURNS",
+    "subtitle": "FIRE, STOVE, STEAM, & SUNBURN",
+    "Management": {
+      "point1": "Remove patient from any fire danger (uowind if outside)",
+      "point2": "Cool the affected area with cool running water for up to 20 minutes[start timer] (stop if patient shivers)",
+      "point3": "Carefully remove any clothing that has been burnt or is affected by hot water",
+      "point4": "DO NOT remove any clothing that is attached to skin",
+      "point5": "Very carefully remove rings or watches, if unsure leave for medical staff to remove",
+      "point6": "Cover the affected area with a non-adherent sterile dressing or burnaid gel.",
+      "point7": "Elevate burnt limbs",
+      "point8": "DO NOT break blisters or apply any ointment, butter or powders to the affected area",
+      "point9": "Always seek urgent medical assistance for all burns"
+    },
+    "Sunburn": {
+      "title": "Sunburn:",
+      "des1": "Is just as bad as any other burns, even short periods in the sun can result in serious burns occuring to,back, neck,face, arms or legs.",
+      "des2": "Medical assistance is most urgent and treatment as stated above with cool running water for up to 20 minutes and then covering with non-adherent dressing is best management."
+    }
+  },
+
+  "Chocking": {
+    "title": "CHOKING",
+    "subtitle": "FOREIGN BODY AIRWAY OBSTRUCTION",
+    "description": "Access Severity",
+    "des1": "(Select choice)"
+  },
+  "Choking": {
+    "emergency": {
+      "EmergencyCall": "Emergency Call",
+      "bystander": "If you are a bystander, call"
+    },
+    "buttons": {
+      "effectiveCough": "Effective Cough\nMILD Airway Obstruction",
+      "ineffectiveCough": "Ineffective Cough\nSEVERE Airway Obstruction"
+    },
+    "EffectiveCoughing": {
+      "Subtitle": "MILD Airway Obstruction:",
+      "step1": "Continue to monitoe the patient until they recover",
+      "des1": " Encourage Coughing",
+      "step2": " If no improvement, call an Ambulance"
+    },
+    "Ineffective": {
+      "Subtitle": "SEVERE Airway Obstruction:",
+      "step1": "Call an Ambulance"
+    },
+    "button": {
+      "name1": "Conscious",
+      "name2": "Unconscious"
+    },
+    "management": {
+      "conscious": {
+        "cons1": "Give patient reassurance and remove all restrictive clothing and jewellery from around the neck and chest area",
+        "cons2": "Call an Ambulance"
+      },
+      "unconscious": {
+        "uncon1": "clear airway",
+        "uncon2": "Follow Basic Life Support chart",
+        "uncon3": "Call an ambulance urgently"
+      }
+    }
+  },
+
+  "DiabeticEmergency": {
+    "title": "DIABETIC EMERGENCY",
+    "description": "Diabetes ia a condition caused from a disorder of the pancreas which affects the management of insulin, either not producing enough insulin or not producing insulin at all. This causes the following conditions.",
+    "sym1": "Hyperglycaemia : High siger levels in the blood",
+    "sym2": "Hypoglycaemia : Low sugar levels in the blood.",
+    "Recognition": {
+      "title": "Recognition of Hypergiycaemia (HYPER):",
+      "Reco1": "Drowsiness",
+      "Reco2": "Thirst",
+      "Reco3": "A 'fruity' smell develops on the breath",
+      "Reco4": "Frequent urination",
+      "Reco5": "May lose conciousness",
+      "Reco6": "Water may assist",
+      "Reco7": "If conscious, assist patient to self administer their own medication",
+      "Reco8": "If unconscious, clear airway and follow the : Basic Life Support Flow Chart:"
+    },
+    "Recognition2": {
+      "title": "Recognition of Hypoglycaemia (HYPO):",
+      "Reco1": "Weakness",
+      "Reco2": "Light-headed",
+      "Reco3": "Giddy",
+      "Reco4": "May suffer mental confusion and appear aggressive with a drunken appearance",
+      "Reco5": "Develop cold/ pale / sweaty skin",
+      "Reco6": "Eapid pulse and may become unconscious",
+      "Reco7": "If conscious, give patient food or drink containing sugar.",
+      "Reco8": "If unconscious, clear airway and fillow the: Basic Life Support Flow Chart:",
+      "Reco9": "WARNING: Insulin must not be administered as can be fatal"
+    },
+    "button": {
+      "name1": "Conscious",
+      "name2": "Unconscious"
+    },
+    "Concious": {
+      "title": "DIABETIC EMERGENCY",
+      "Subtitle": "MANAGEMENT IF CONSCIOUS",
+      "step1": "Give the patient jellybeans, a tablespoon of honey, or any drink containing sugar.",
+      "step2": "DO NOT give drinks containing saccgarin, sweetener or non sugar"
+    },
+    "Unconscious": {
+      "Subtitle": "MANAGEMENT IF UNCONSCIOUS",
+      "step1": "Clear Airway",
+      "step2": "Follow the :"
+    }
+  },
+
+  "ExposuretoCold": {
+    "title": "EXPOSURE TO COLD",
+    "subtitle": "HTPERTHERMIA",
+    "description": "The body temperature only needs to fall by 2°C for HYPOTHERMIA to begin. This may even go unnoticed as the onset is usually grsdual and the recognition of htpothermia is not always easy to detect.",
+    "causes": {
+      "title": "Causes:",
+      "description": "Immersion in cold water, lack of suitable clothing , wind, rain, immobillisation and exhaustion. It often happens to elderly, ill or the unconscious when exposed to low temperature or those living in cold climates with inadequate heating or in adverse weather conditions."
+    },
+    "symptomsHeading": "Signs & Symptoms:",
+    "symptoms": {
+      "sym1": "Unusual behaviour with complaints of feeling cold and tired, including confusion and fatigue",
+      "sym2": "May become disturbed with slurred speech",
+      "sym3": "Shivering first or violent outbursts",
+      "sym4": "May resist offers of help, possibly resulting in obscene or abusive language.",
+      "sym5": "Shallow weak breathing and a slow pulse may result in falling, collapsing or becoming unresponsive"
+    },
+    "Management": {
+      "title": "Management",
+      "point1": "Move the patient to a warm sheltered area protected from the conditions (when moving, be gentle with patient)",
+      "point2": "Lie the patient flat, remove wet clothing and replace with warm clothing, wrap torso and limbs independently and then as a whole",
+      "point3": "Cover neck and head leaving the face clear",
+      "point4": "Insulate patient from the coldness of the ground",
+      "point5": "If conscious, give warm drinks",
+      "point6": "If the patient is unresponsive follow the:",
+      "point7": "Call an Ambulance"
+    }
+  },
+  "ExposuretoHeat": {
+    "title": "EXPOSURE TO HEAT",
+    "subtitle": " HYPERTHERMIA",
+    "HeatExposure": {
+      "hyper": "Heat Exposure (Hyperthermia):",
+      "description": "ia a far more serious condition than we often believe. Recognising the potential of heat exposure is, by far, the best way of preventing this life threatening situation. All patient experiencing any of the following heat exposure symptoms must receive medical assistance.",
+      "title": "Heat Exposure is classified by 3 levels:",
+      "sym1": "Heat cramps",
+      "sym2": "Heat exhaustion",
+      "des": "Heat Cramps / Heat Exhaustion - sufferers complain of severe muscle pain and cramps, in the legs and abdomen, that may lead to exhaustion i.e faintness, dizziness and weakness.",
+      "button": {
+        "next": "Heat Stroke",
+        "Management": "Management",
+        "name1": "Conscious",
+        "name2": "Unconscious"
+      },
+      "HeatStroke": {
+        "title": "EXPOSURE TO HEAT",
+        "subtitle": "HEAT STROKE"
+      },
+      "symptoms": {
+        "title": "Signs and Symptoms:",
+        "sym1": "Dry Skin",
+        "sym2": "Hot body",
+        "sym3": "Flushed",
+        "sym4": "Strong pounding pulse",
+        "sym5": "Headache",
+        "sym6": "Then an unconscious state and breathing which becomes noisy."
+      }
+    },
+    "HeatStrokeConcious": {
+      "title": "EXPOSURE TO HEAT",
+      "Subtitle": "MANAGEMENT IF CONSCIOUS",
+      "step1": "Move the patient to a cool shaded area",
+      "step2": "Remove any additional clothing they may be wearing",
+      "step3": "To assist with heat loss place a cool wet towel on back of neck and forhead. Lie the patient down if possible",
+      "step4": " Call an Ambulance or medical assistance urgently"
+    },
+    "HeatStrokeUnConcious": {
+      "title": "EXPOSURE TO HEAT",
+      "subtitle": "MANAGEMENT IF UNCONSCIOUS",
+      "sym1": "Remove and loosen clothing",
+      "sym2": "Cool using ice packs under the armpits, groin and back of neck. If ice is unavailable pour cold water over patient and wrap in wet sheets or towels",
+      "sym3": "Fan them with watever is available; electric fan, towel, newspaper",
+      "sym4": "Call an Ambulance or medical assistance urgently",
+      "sym5": "Clear the airway and follow the :"
+    },
+    "button": {
+      "next": "Basic Life Support Flow Chart",
+      "Management": "Management",
+      "name1": "Conscious",
+      "name2": "Unconscious"
+    },
+    "Hyperthermiacons": {
+      "title": " EXPOSURE TO HEAT",
+      "subtitle": "HYPERTHERMIA",
+      "sym1": "Lie the patient down in a cool, shaded area",
+      "sym2": "Give the patient sips of a solution that is 1/2 a teaspoon of salt in 500ml of water",
+      "sym3": "DO NOT give salt tablets",
+      "sym4": "If the patient has experienced severe vomiting or diarrhoea seek urgent medical assistance. Call an Ambulance"
+    },
+    "HyperthermiaUncons": {
+      "subtitle": "MANAGEMENT IF UNCONSCIOUS",
+      "sym1": "Lie the patient down in a cool, shaded area",
+      "sym2": "Call seek urgent medical assistance.",
+      "sym3": "Follow the:"
+    }
+  },
+  "BrokenBone": {
+    "title": "BROKEN BONE OR FRACTURE",
+    "Management": {
+      "title": "Management:",
+      "point1": " Reassure the patient, help into a comfortable position, and minimise their movement.",
+      "point2": "Call an ambulance if the injured area is clearly deformed, painful,or transport is needed",
+      "description": " Immobillise by strapping above and below the break using bandages and a splint or sling.Check circulation and monitor frequently; watching exremities(fingers and toes) for loss of circukation (loss of skin colour)",
+      "des1": " Immobilise a finger or toe with a splint or taping / strapping to another",
+      "des2": " A leg can be immobilised by strapping to the other leg",
+      "symptomsHeading": "Fractures are classified into",
+      "sym1": "Closed (break under the skin)",
+      "sym2": "open (aka Compound)",
+      "sym3": "Complicated (most serious)",
+      "sym4": "Green stick ( young bones)"
+    }
+  },
+  "ForiegnBodyeye": {
+    "title": "FOREIGN BODY IN EYE",
+    "point1": " Wash the eye from bridge of the nose outwards",
+    "point2": "Always angle the injured eye downwards to prevent spill into the other eye",
+    "point3": "Embedded objects must only be removed by medical staff",
+    "point4": "Closed eye injuries must only be treated by trained medical staff",
+    "point5": "Dress with care using an eye pad or No.13 wound dressing, by placing the combined dressing pad on the eye and gently strapping around the patient's head.",
+    "point6": "NOTE: A person wearing an eye pad should not drive a vehicle."
+  },
+
+  "HeadInjury": {
+    "title": "HEAD INJURY",
+    "description": "Even if the patient has been unconscious only for a short time they must always be seen by a doctor",
+    "des1": "Patient with a head injury should be treated as having a spinal injury until proven otherwise",
+    "History": {
+      "title": "History",
+      "description": "Look for evidence that suggests a head injury, for example fallen objects, ask the patient or bystander about what happened"
+    },
+    "symptoms": {
+      "sym1": "May take up to a couple of days to develop.",
+      "sym2": "Common symptoms include headache, dizziness, drowsiness, confusion, blurred vision, and nausea."
+    },
+    "button": {
+      "name1": "Conscious",
+      "name2": "Unconscious"
+    },
+    "management": {
+      "conscious": {
+        "cons1": "Position the patient on their back with their head and shoulders slightly raised.",
+        "cons2": "Call an ambulance."
+      },
+      "unconscious": {
+        "uncon1": "If unconscious, clear the airway and follow the DRSABCD action plan.",
+        "uncon2": "If the person becomes confused, drowsy, vomits, experiences blurred vision, or has other concerning symptoms, call an ambulance."
+      }
+    }
+  },
+
+  "Attack": {
+    "title": "HEART ATTACK",
+    "symptoms": {
+      "sym1": "Tight or heavy pain across the chest.",
+      "sym2": "Pain",
+      "sym3": "Sweating",
+      "sym4": "Numbness",
+      "sym5": "Discomfort in arms,neck,jaw",
+      "sym6": "Nausea",
+      "description": "Not all patients experience all of these signs and symptoms. If the patient experiences any of these signs or symptoms please seek urgent medical advice.",
+      "Information": "More Information:",
+      "des1": "The greatest cause of death in Australia is from heart attack or a sudden collapse due to rhythm disturbances may lead to a cardiac arrest."
+    },
+    "conscious": {
+      "title": "HEART ATTACK",
+      "subtitle": "MANAGEMENT IF CONSCIOUS",
+      "sym1": "Use an AED(Defibrillator)",
+      "sym2": "Rest and relax the patient, give reassurance",
+      "sym3": "DO NOT allow unecessary",
+      "sym4": "Don't leave the patient unattended",
+      "sym5": "Loosen any tight clothing",
+      "sym6": "If oxygen is available, and you are trained in its use, administer with an oxygen mask, until an ambulance arrives."
+    }
+  },
+
+  "Meningitis": {
+    "title": "MENINGITIS",
+    "description": "Meningitis is a potentially life threatening condition.",
+    "symptoms": {
+      "sym1": "Stiff painful neck, pain in back and muscles",
+      "sym2": "Whole body: fever, chills, lethargy, loss of appetite, malaise, shivering",
+      "sym3": "Gastrointestinal: nausea or vomiting",
+      "sym4": "Skin: Blotchy rashes, red rashes",
+      "sym5": "Other: irritable, confusion, sensitivity to light, bulging fontanelle, fast breathing, fast heart rate, fear of loud sounds, headache, lack of interest in feeding in infants, sleepiness, sluggishness, or stiff back"
+    },
+    "button": {
+      "name1": "Conscious",
+      "name2": "Unconscious"
+    },
+    "management": {
+      "conscious": {
+        "cons1": "Position the patient on their back with their head and shoulders slightly raised.",
+        "cons2": "Call an ambulance."
+      },
+      "unconscious": {
+        "uncon1": "Call an ambulance or medical assistance urgently.",
+        "uncon2": "Clear the airway and follow the Basic Life Support chart."
+      }
+    }
+  },
+
+  "Minorwound": {
+    "title": "MINOR WOUND",
+    "des1": "When Treating",
+    "symptoms": {
+      "sym1": "Hygiene is always the number one priority for treatmenting all minor wounds. Antiseptic solution should be used and diluted in accordance with instructions. If there is no antiseptic then use saline. Always clean from the centre of the wound outwards and then the patient and constantly observe making a note of comments about their feelings.",
+      "sym2": "Non-adherent dressings are best used for grazes, non blood flow or burns. Always secure the dressing with a conforming bandages or paper tape. Be gentle with the patient, observe. Note: Older people may take Aspirin to thin their blood and can bleed very fast.",
+      "sym3": "Wound dressings are best for blood flowing wounds and also work well on an eye injury. They include a combined dressing with conforming bandage. Always directly on wound and secure.",
+      "sym4": "Triangular Bandages are in every First Aid Kit and are made to become arm slings but are great for padding or strapping legs or arms. Broken collarbones may require three.",
+      "sym5": "Heavy Crepe 10cm, the size of the fist so it csn be applied at the correct pressure without creasing."
+    }
+  },
+  "Seizures": {
+    "title": "SEIZURES",
+    "description": "Seizures result in the patient falling on the floor and suffering rigid and jerking muscle spasms.",
+    "Management": {
+      "title": "Management",
+      "sym1": "Do not Restrain the patient",
+      "sym2": "Protect the patient from injury by removing dangerous objects or padding of all surrounding objects",
+      "sym3": "If biting of the tongue occurs, never place objects into the patient's mouth as it may result in injury to their jaw or teeth as well as potentially blocking their airway.",
+      "sym4": "When fitting stops, place the patient into the:",
+      "sym5": "If necessary, call an Ambulance",
+      "Des2": "ABC's until conscious.(Airway, Breathing,Circulation).",
+      "des3": "When patient regains memory they may be very embarrassed. Therefore, ask bystanders to leave before this occurs and five reassurance to the patient as described in the:",
+      "des4": "WARNING: Should another fit occur, treat as above and seek urgent medical assistance"
+    }
+  },
+
+  "Shock": {
+    "title": "SHOCK",
+    "symptoms": {
+      "sym1": " Cold,Pale, Sweaty Skin",
+      "sym2": "Rapid and Shallow Breathing",
+      "sym3": "Rapid and Weak Pulse",
+      "sym4": "May Feel Anxious, Appear Restless",
+      "sym5": "Nausea and vomiting"
+    },
+    "Management": {
+      "title": "Management",
+      "symptoms": {
+        "sym1": "If the patient responsive and breathing normally then lie them in their back and raise their legs, (as picture below)",
+        "sym2": "If the patient is Unresponsive and not breathing normally then commence."
+      }
+    },
+    "Information": {
+      "description": "More Information - CAUSE OF SHOCK:",
+      "sym1": "Uncontrolled Bleeding",
+      "sym2": "Dehydration",
+      "sym3": "Burns (Loss of Plasma)",
+      "sym4": "Severe Allergic Reaction",
+      "sym5": "Heart Failure",
+      "sym6": "Trauma",
+      "sym7": "Severe Infection",
+      "sym8": "The recognition and prompt management of Shock can drastically reduce a patient's chance of deterioration"
+    }
+  },
+  "Poisons": {
+    "title": " POISONS",
+    "Description": "Always consult the M.S.D.S (Material Safety Data Sheet) and / or call the national poisons information centre on 131126.",
+    "subtitle": "POISONS 24 HOUR CALL LINE:",
+    "des1": "DO NOT give the patient anything to eat or drink unless directed to do so by the MSDS poisons information centre.",
+    "button": {
+      "name1": "Conscious",
+      "name2": "Unconscious"
+    },
+    "management": {
+      "conscious": {
+        "title": "POISONS",
+        "cons1": "Rest and reassure the patient",
+        "cons2": "Identify poison, time and route of exposure",
+        "cons3": "Remove poison where possible without exposing yourself",
+        "cons4": "Monitor the patient",
+        "cons5": "Call an Ambulance"
+      },
+      "unconscious": {
+        "uncon1": "Avoid rescue breaths if there is a risk of cross contamination",
+        "uncon2": "Consider mouth to nose ventilation (optional)",
+        "uncon3": "Follow the:"
       }
     }
   }

@@ -1,26 +1,192 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import {useTranslation} from 'react-i18next';
+import {StyleSheet, ScrollView, Image, View, Linking} from 'react-native';
+import {Card, Title, Paragraph, Button} from 'react-native-paper';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../redux/store';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import Feather from 'react-native-vector-icons/Feather';
+import {useNavigation} from '@react-navigation/native';
 
-function Burnfirestove() {
+const Burnfirestove = () => {
+  const {t} = useTranslation();
+  const isDarkMode = useSelector((state: RootState) => state.theme.isDarkMode);
+  const navigation = useNavigation<any>();
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Hello, World!</Text>
-    </View>
+    <ScrollView
+      style={[
+        styles.container,
+        {backgroundColor: isDarkMode ? '#000' : '#fff'},
+      ]}>
+      {/* Header Image */}
+      {/* <Image source={require('../../assets/firstAid/burns.webp')} style={styles.image} /> */}
+
+      {/* Title */}
+      <Title
+        style={[
+          styles.card,
+          styles.header,
+          {color: isDarkMode ? '#fff' : '#000'},
+        ]}>
+        {t('BurnsStove.title')}
+      </Title>
+
+      <Title
+        style={[
+          styles.card,
+          styles.header,
+          {color: isDarkMode ? '#fff' : '#000'},
+        ]}>
+        {t('BurnsStove.subtitle')}
+      </Title>
+
+      {/* Management Section */}
+      <View
+        style={[styles.card, isDarkMode ? styles.darkCard : styles.lightCard]}>
+        
+        {[
+          t('BurnsStove.Management.point1'),
+          t('BurnsStove.Management.point2'),
+          t('BurnsStove.Management.point3'),
+          t('BurnsStove.Management.point4'),
+          t('BurnsStove.Management.point5'),
+          t('BurnsStove.Management.point6'),
+          t('BurnsStove.Management.point7'),
+          t('BurnsStove.Management.point8'),
+        ].map((item, index) => (
+          <View key={index} style={styles.listItem}>
+            <FontAwesome5 name="dot-circle" size={20} color="blue" />
+            <Paragraph
+              style={[
+                styles.listText,
+                isDarkMode ? styles.darkText : styles.lightText,
+              ]}>
+              {item}
+            </Paragraph>
+          </View>
+        ))}
+      </View>
+      
+      <Title
+        style={[styles.title, isDarkMode ? styles.darkText : styles.lightText]}>
+        {t('BurnsStove.Sunburn.title')}
+      </Title>
+      {[t('BurnsStove.Sunburn.des1'), t('BurnsStove.Sunburn.des2')].map((item, index) => (
+        <View key={index} style={styles.listItem}>
+          {/* <FontAwesome5 name="dot-circle" size={20} color="blue" /> */}
+          <Paragraph
+            style={[
+              styles.listText,
+              isDarkMode ? styles.darkText : styles.lightText,
+            ]}>
+            {item}
+          </Paragraph>
+        </View>
+      ))}
+
+      <Button
+        mode="contained"
+        style={styles.callButton}
+        onPress={() => Linking.openURL('tel:000')}
+        icon={() => <Feather name="phone-call" size={20} color="white" />}>
+        {t('funnelspider.emergency.EmergencyCall')}
+      </Button>
+
+      {/* Emergency Text and Number */}
+      <Paragraph
+        style={[
+          styles.emergencyText,
+          isDarkMode ? styles.darkText : styles.warnColor,
+        ]}>
+        {t('funnelspider.emergency.bystander')}
+      </Paragraph>
+      <Paragraph style={[styles.emergencyNumber, styles.warnColor]}>
+        000
+      </Paragraph>
+     
+      
+    </ScrollView>
   );
-}
+};
+
+export default Burnfirestove;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f5f5f5',
+    padding: 10,
   },
-  text: {
+  image: {
+    width: '100%',
+    height: 350,
+    borderRadius: 10,
+    marginBottom: 16,
+    resizeMode: 'cover',
+  },
+  card: {
+    marginBottom: 16,
+    borderRadius: 20,
+    padding: 10,
+  },
+  header: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#333',
+    textAlign: 'center',
+    marginBottom: 16,
+  },
+  title: {
+    fontSize: 20,
+    marginBottom: 10,
+    textAlign: 'justify',
+    fontWeight: 'bold',
+  },
+  listItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
+  listText: {
+    fontSize: 16,
+    marginLeft: 8,
+  },
+  darkCard: {
+    backgroundColor: '#222',
+  },
+  lightCard: {
+    backgroundColor: '#fff',
+  },
+  darkText: {
+    color: 'white',
+  },
+  lightText: {
+    color: 'black',
+  },
+  callButton: {
+    marginTop: 16,
+    marginBottom: 16,
+    backgroundColor: '#FF0000',
+  },
+  callButton1: {
+    marginTop: 16,
+    marginBottom: 16,
+    backgroundColor: 'green',
+  },
+  emergencyText: {
+    fontSize: 16,
+    textAlign: 'center',
+    marginBottom: 8,
+  },
+  emergencyNumber: {
+    fontSize: 20,
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  warnColor: {
+    color: '#FF0000',
+  },
+  callButtonname2: {
+    marginTop: 10,
+    backgroundColor: '#FF2400',
   },
 });
-
-export default Burnfirestove;

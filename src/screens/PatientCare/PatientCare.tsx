@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, ScrollView, Image, View, Text, TouchableOpacity, Linking } from 'react-native';
-import { Divider, Paragraph } from 'react-native-paper';
+import { Divider, Paragraph, Title } from 'react-native-paper';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 import Feather from 'react-native-vector-icons/Feather';
@@ -18,14 +18,23 @@ const PatientCare = () => {
         <ScrollView style={[styles.container, { backgroundColor: isDarkMode ? "#000" : "#fff" }]}>
 
             {/* Header Image */}
-            <Image source={require('../../assets/PatientCare/patientCare.webp')} style={styles.image} />
+            {/* <Image source={require('../../assets/PatientCare/patientCare.webp')} style={styles.image} /> */}
 
             {/* Title
             <Text style={[styles.header, { color: isDarkMode ? "#fff" : "#000" }]}>
                 {t('PatientCare.patient_care_title')}
-            </Text> */}
+            </Text> 
 
             {/* Content List */}
+
+<Title
+        style={[
+          styles.card,
+          styles.header,
+          {color: isDarkMode ? '#fff' : '#000'},
+        ]}>
+        {t('PatientCare.patient_care_title')}
+      </Title>
             <View style={styles.contentContainer}>
                 {[
                     t('PatientCare.patient_care_desc'),
@@ -120,5 +129,11 @@ const styles = StyleSheet.create({
         display:"flex",
         alignItems:"center",
         justifyContent:"center"
-    }
+    },
+    
+    card: {
+        marginBottom: 16,
+        borderRadius: 20,
+        padding: 10,
+      },
 });

@@ -16,7 +16,7 @@ const AllergiesAnaphylaxis = () => {
     return (
         <ScrollView style={[styles.container, { backgroundColor: isDarkMode ? "#000" : "#fff" }]}>
             {/* Header Image */}
-            <Image source={require('../../assets/allergies_anaphylaxis/allergiesanaphylaxis.webp')} style={styles.image} />
+            {/* <Image source={require('../../assets/allergies_anaphylaxis/allergiesanaphylaxis.webp')} style={styles.image} /> */}
 
             {/* Title */}
             <Title style={[styles.card, styles.header, { color: isDarkMode ? "#fff" : "#000" }]}>

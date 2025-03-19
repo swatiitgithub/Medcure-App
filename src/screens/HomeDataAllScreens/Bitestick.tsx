@@ -75,7 +75,7 @@ const Bitetick = () => {
                 onPress={() => Linking.openURL('tel:000')}
                 icon={() => <Feather name="phone-call" size={20} color="white" />}
             >
-                {t('funnelspider.emergency.EmergencyCall')}
+                {t('bitetick.tickemergency.bys')}
             </Button>
 
             {/* Emergency Text and Number */}
@@ -85,7 +85,7 @@ const Bitetick = () => {
                     isDarkMode ? styles.darkText : styles.warnColor,
                 ]}
             >
-                {t('funnelspider.emergency.bystander')}
+                {t('bitetick.tickemergency.call')}
             </Paragraph>
             <Paragraph style={[styles.emergencyNumber, styles.warnColor]}>
                 000

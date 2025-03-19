@@ -21,10 +21,10 @@ const RecoveryPosition = () => {
       ]}
     >
       {/* Image */}
-      <Image
+      {/* <Image
         source={require('../../assets/firstAid/Recovery.webp')}
         style={styles.image}
-      />
+      /> */}
 
       {/* Title */}
       <Title

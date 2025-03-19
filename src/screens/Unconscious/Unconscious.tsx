@@ -20,7 +20,7 @@ const Unconscious = () => {
   // Get the image dynamically based on condition
   const getConditionImage = () => {
     try {
-      return require(`../../assets/firstAid/unconsciousness.webp`);
+      // return require(`../../assets/firstAid/unconsciousness.webp`);
      // return require(`../../assets/firstAid/${condition.toLowerCase()}.webp`);
     } catch {
       return null;

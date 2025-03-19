@@ -17,10 +17,10 @@ const EmergencyPhoneNumber = () => {
     style={[styles.container, isDarkMode ? styles.darkBackground : styles.lightBackground]}
   >
     {/* Image */}
-    <Image
+    {/* <Image
       source={require('../../assets/Emergency/emergencycall.webp')}
       style={styles.image}
-    />
+    /> */}
 
     {/* Header 
     <Title style={[styles.header, isDarkMode ? styles.darkText : styles.lightText]}>
